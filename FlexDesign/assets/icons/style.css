@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'app';
+  src:  url('fonts/app.eot?ur5ioe');
+  src:  url('fonts/app.eot?ur5ioe#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?ur5ioe') format('truetype'),
+    url('fonts/app.woff?ur5ioe') format('woff'),
+    url('fonts/app.svg?ur5ioe#app') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic_fluent_branch_compare_regular_icon:before {
+  content: "\e904";
+}
+.icon-menu_dots_icon:before {
+  content: "\e903";
+}
+.icon-account_circle:before {
+  content: "\e900";
+}
+.icon-question-circle-o:before {
+  content: "\e901";
+}
+.icon-product-hunt:before {
+  content: "\e902";
+}
+.icon-calendar:before {
+  content: "\e953";
+}
+.icon-shield:before {
+  content: "\e9b4";
+}
+.icon-exit:before {
+  content: "\ea14";
+}
+.icon-radio-checked:before {
+  content: "\ea54";
+}
