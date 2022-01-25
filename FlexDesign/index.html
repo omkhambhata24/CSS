@@ -13,10 +13,12 @@
 <body class="h1">
     <div class="wrapper d-flex h1">
         <aside class="d-flex sidebar f-col">
-            <section class="d-flex sidebar-sec sidebar-top h-height">
+            <section class="d-flex h-height">
                 <!-- Header of Sidebar-->
+                <div class="d-flex sidebar-item">
                 <div class="icon icon-menu_dots_icon"></div>
                 <span><b>POLKA</b></span>
+                </div>
             </section>
 
             <nav class="nav d-flex f-col f-grow h100">
@@ -75,11 +77,11 @@
 
         <!-- Header part of main section-->
         <section class="d-flex f-grow f-col">
-            <header class="d-flex w1">
-                <div class="d-flex search-bar h100 w100">
-                    <input type="search" name="search" id="search">
+            <header class="d-flex header h-height w100">
+                <div class="search-bar">
+                    <input type="search" name="search" id="search" placeholder="Enter a Keyword Here">
                 </div>
-                <div class="hcont">
+                <div class="hbutton-cont">
                     <button class="hbutton">Upload a meeting</button>
                 </div>
             </header>
