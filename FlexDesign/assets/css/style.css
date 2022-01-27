@@ -76,11 +76,12 @@ html {
     margin: 1rem 1.25rem;
     align-items: center;
     border-radius: 0.5rem;
+    color: rgb(112, 107, 107);
 }
 
 .sidebar-item:hover {
     background-color: rgba(221, 215, 215, 0.541);
-    
+    color: black;
 }
 
 .sidebar-top {
