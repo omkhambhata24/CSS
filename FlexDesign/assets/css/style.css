@@ -71,8 +71,8 @@ html {
 }
 
 .sidebar-item {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 1rem 1.25rem;
+    margin: 1rem 1.25rem;
     align-items: center;
     border-radius: 0.5rem;
 }
