@@ -29,6 +29,7 @@ html {
 
 .header {
     align-content: center;
+    justify-content: space-between;
 }
 
 .h-content {
@@ -36,7 +37,7 @@ html {
 }
 
 .hbutton-cont {
-    padding: 0.6rem 0;
+    padding: 1rem 5rem;
 }
 
 .hbutton {
