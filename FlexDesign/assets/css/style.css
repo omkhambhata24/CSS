@@ -30,6 +30,7 @@ html {
 .header {
     align-content: center;
     justify-content: space-between;
+    background-color: rgba(248,248,250,255);
 }
 
 .h-content {
@@ -138,8 +139,5 @@ html {
 
 .main-sec {
     padding: 1% 1%;
-}
-
-.m-sec {
-    background-color: rgb(255, 251, 251);
+    background-color: rgba(252,251,254,255);
 }
