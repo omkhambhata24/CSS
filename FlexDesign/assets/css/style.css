@@ -56,6 +56,10 @@ html {
     
 }
 
+.hbutton:hover {
+    background-color: green;
+}
+
 .h-height {
     flex-basis: 8%;
     flex-shrink: 0;
@@ -77,6 +81,13 @@ html {
     align-items: center;
     border-radius: 0.5rem;
     color: rgb(112, 107, 107);
+}
+
+.sidebar-item1 {
+    padding: 1rem 1.25rem;
+    margin: 1rem 1.25rem;
+    align-items: center;
+    border-radius: 0.5rem;
 }
 
 .sidebar-item:hover {
