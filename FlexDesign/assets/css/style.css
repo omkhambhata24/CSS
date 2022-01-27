@@ -37,7 +37,7 @@ html {
 }
 
 .hbutton-cont {
-    padding: 1rem 5rem;
+     padding: 0.8rem 5rem; 
 }
 
 .hbutton {
@@ -50,7 +50,8 @@ html {
     display: inline-block;
     font-size: 1rem;
     margin: 5px 2px;
-    border-radius: 0.75rem;
+    border-radius: 0.4rem;
+    min-width: 145px;
     
 }
 
