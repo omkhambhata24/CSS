@@ -36,11 +36,21 @@ html {
 }
 
 .hbutton-cont {
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
 }
 
 .hbutton {
-    height: 66.67%;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 5px 2px;
+    border-radius: 0.75rem;
+    
 }
 
 .h-height {
@@ -51,7 +61,7 @@ html {
 }
 
 .sidebar {
-    flex-basis: 20%;
+    flex-basis: 18%;
     max-width: 225px;
     min-width: max-content;
     overflow: hidden;
@@ -59,14 +69,15 @@ html {
 }
 
 .sidebar-item {
-    padding: 0.75rem;
-    margin: 0.75rem;
+    padding: 1rem;
+    margin: 1rem;
     align-items: center;
     border-radius: 0.5rem;
 }
 
 .sidebar-item:hover {
-    background-color: #AAAAAA;
+    background-color: rgba(221, 215, 215, 0.541);
+    
 }
 
 .sidebar-top {
@@ -111,17 +122,6 @@ html {
     align-items: center;
 }
 
-.srch-icon {
-    position: absolute;
-    margin: auto 0;
-    margin-right: 10px;
-    width: 1rem;
-    height: 1rem;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-
 .b-border {
     border-bottom: 1px solid #AAAAAA;
 }
@@ -132,4 +132,12 @@ html {
 
 .w100 {
     width: 100%;
+}
+
+.main-sec {
+    padding: 1% 1%;
+}
+
+.m-sec {
+    background-color: rgb(255, 251, 251);
 }
