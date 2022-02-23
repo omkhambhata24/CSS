@@ -6,10 +6,12 @@
     font-size: $head-size;
 }
 
-
+//title
+.content-title {
+    padding: $title-padding;
+}
 
 //graph
-
 .graph {
     height: $graph-height;
     width: $graph-width;
