@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Dashboard</title>
+    <link rel="stylesheet" href="assets/icons/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+    <!--START: Header Section-->
+
+    <header class="d-flex">
+        <div class="icon-radix-icons_dashboard"></div>
+        <div class="search flex-grow-1">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+
+        <div class="notification d-flex">
+            <span class="icon-ant-design_message-outlined"></span>
+            <span class="icon-ph_bell"></span>
+            <span>image</span>
+        </div>
+
+    </header>
+
+    <!--END: Header Section-->
+
+    <div class="d-flex">
+        <!--START: Sidebar Section-->
+        <nav class="d-flex flex-column">
+            <ul>
+                <li><a href="#">App</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </nav>
+        <!--END: Header Section-->
+
+        <!--START: Main Section-->
+
+        <main class="d-flex flex-column flex-grow-1">
+            <div>Dashboard</div>
+
+            <div class="d-flex justify-content-between">
+                <div class="card">
+                    TotaL Views
+                </div>
+                <div class="card">
+                    Total Products
+                </div>
+                <div class="card">
+                    Total Users
+                </div>
+                <div class="card">
+                    Total Sells
+                </div>
+            </div>
+
+            <section class="d-flex justify-content-between">
+                <div class="table">
+                    Products Table
+                </div>
+
+                <div class="graph">
+                    Views & sells Graph
+                </div>
+            </section>
+
+        </main>
+        <!--END: Main Section-->
+    </div>
+
+</body>
+
+</html>
