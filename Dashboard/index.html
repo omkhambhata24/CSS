@@ -11,71 +11,113 @@
 </head>
 
 <body>
+    <div class="d-flex flex-column h-100">
 
-    <!--START: Header Section-->
+        <!--START: Header div-->
 
-    <header class="d-flex">
-        <div class="icon-radix-icons_dashboard"></div>
-        <div class="search flex-grow-1">
-            <input type="text" placeholder="Search" name="search">
-            <button type="submit" class="btn btn-primary">Search</button>
-        </div>
-
-        <div class="notification d-flex">
-            <span class="icon-ant-design_message-outlined"></span>
-            <span class="icon-ph_bell"></span>
-            <span>image</span>
-        </div>
-
-    </header>
-
-    <!--END: Header Section-->
-
-    <div class="d-flex">
-        <!--START: Sidebar Section-->
-        <nav class="d-flex flex-column">
-            <ul>
-                <li><a href="#">App</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">Details</a></li>
-            </ul>
-        </nav>
-        <!--END: Header Section-->
-
-        <!--START: Main Section-->
-
-        <main class="d-flex flex-column flex-grow-1">
-            <div>Dashboard</div>
-
-            <div class="d-flex justify-content-between">
-                <div class="card">
-                    TotaL Views
-                </div>
-                <div class="card">
-                    Total Products
-                </div>
-                <div class="card">
-                    Total Users
-                </div>
-                <div class="card">
-                    Total Sells
-                </div>
+        <header class="d-flex header-height">
+            <div class="icon-radix-icons_dashboard padding header-icon text-center"></div>
+            <!--START: Search Section-->
+            <div class="search flex-grow-1 content-padding">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit" class="btn btn-primary">Search</button>
             </div>
+            <!--END: Search Section-->
 
-            <section class="d-flex justify-content-between">
-                <div class="table">
-                    Products Table
+            <!--START: Notification Section-->
+            <div class="notification d-flex">
+                <ul class="nav-list d-flex padding">
+                    <li class="nav-item icon-ant-design_message-outlined"></li>
+                    <li class="nav-item icon-ph_bell"></li>
+
+                </ul>
+            </div>
+            <!--END: Search Section-->
+
+        </header>
+
+        <!--END: Header div-->
+
+        <div class="d-flex flex-grow-1">
+            <!--START: Sidebar div-->
+            <aside class="d-flex flex-column navbar padding" style="border: 1px solid green;">
+                <nav class="flex-grow-1">
+                    <ul class="nav-list text-center">
+                        <li class="nav-item icon-radix-icons_dashboard"></li>
+                        <li class="nav-item icon-bi_cart-dash-fill"></li>
+                        <li class="nav-item icon-fluent_notepad-20-filled"></li>
+                        <li class="nav-item icon-ci_settings-filled"></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="nav-list text-center">
+                        <li class="nav-item icon-ep_warning-filled"></li>
+                        <li class="nav-item icon-octicon_sign-out-16"></li>
+                    </ul>
+                </nav>
+            </aside>
+            <!--END: Header div-->
+
+            <!--START: Main div-->
+
+            <div class="d-flex flex-column flex-grow-1">
+                <div class="content-padding" style="border: 1px solid blue;">
+                    <h1>Dashboard</h1>
                 </div>
 
-                <div class="graph">
-                    Views & sells Graph
+                <div class="d-flex justify-content-between content-padding" style="border: 1px solid red;">
+                    <div class="card">
+                        <span class="icon-bi_eye-fill"></span>
+                        <div>TotaL Views</div>
+                        <div>308.482</div>
+                        <div>Start from 1 January 2021</div>
+                    </div>
+                    <div class="card">
+                        <span class="icon-fa6-solid_bag-shopping"></span>
+                        <div>TotaL Products</div>
+                        <div>10.820</div>
+                        <div>+ Add New Product</div>
+                    </div>
+                    <div class="card">
+                        <span class="icon-fa6-solid_user-group"></span>
+                        <div>TotaL Users</div>
+                        <div>8.425</div>
+                        <div>New User added Every Week</div>
+                    </div>
+                    <div class="card">
+                        <span class="icon-bi_cart-dash-fill"></span>
+                        <div>TotaL Sells</div>
+                        <div>1.028.623</div>
+                        <div>Start from 1 January 2021</div>
+                    </div>
                 </div>
-            </section>
 
-        </main>
-        <!--END: Main Section-->
+                <div class="d-flex content-padding">
+                    <div class="d-flex flex-grow-1">
+                        <table class="table-border">
+                            <thead>
+                                <tr class="text-center th-color th-font-size">
+                                    <th class="th-font-weight" scope="col">Sr.No.</th>
+                                    <th class="th-font-weight" scope="col">Product Name</th>
+                                    <th class="th-font-weight" scope="col">Status</th>
+                                    <th class="th-font-weight" scope="col">Sold</th>
+                                    <th class="th-font-weight" scope="col">View</th>
+                                </tr>
+                            </thead>
+
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex graph">
+                        Views & sells Graph
+                    </div>
+                </div>
+
+            </div>
+            <!--END: Main div-->
+        </div>
     </div>
-
 </body>
 
 </html>

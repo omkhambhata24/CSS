@@ -1,0 +1,17 @@
+.content-padding {
+    padding: $content-padding;
+}
+
+.content-head-size {
+    font-size: $head-size;
+}
+
+
+
+//graph
+
+.graph {
+    height: $graph-height;
+    width: $graph-width;
+    @include border(1px, solid, $primary)
+}

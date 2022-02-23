@@ -1,1 +1,6 @@
-// All the SCSS mixins goes here
+// All the SCSS mixins goes here'
+
+@mixin border($size,$type, $color)
+{
+    border: $size $type $color;
+}

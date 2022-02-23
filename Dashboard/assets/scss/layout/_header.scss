@@ -1,6 +1,9 @@
 // Header area style
+.header-height {
+    height: $header-height;
+}
 
-.header-border{
-    border: $header-border-size;
-    color: $danger;
+.header-icon{
+    font-size: $header-icon-size;
+    width: $navbar-width;
 }

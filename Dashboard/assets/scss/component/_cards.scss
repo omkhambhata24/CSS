@@ -1,1 +1,8 @@
 // Card styles goes here
+
+.card {
+    height: $card-height;
+    width: $card-width;
+    padding: $card-padding;
+    @include border(1px, solid, $gray)
+}
