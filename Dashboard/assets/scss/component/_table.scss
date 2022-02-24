@@ -1,0 +1,7 @@
+.data {
+    padding: $card-padding;
+    margin: $card-margin;
+    background-color: $light;
+    @include border(1px, solid, $grey);
+    border: none;
+}
