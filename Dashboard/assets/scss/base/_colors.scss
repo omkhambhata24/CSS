@@ -2,11 +2,12 @@
 $primary: #438ffe;
 $danger: rgb(240, 70, 18);
 $green: #8bc38a;
-$dark-green: #83bcbd;
+$dark-green: #4da7ac;
 $accent: #021a28;
 $grey: #abb1bf;
 $light-grey: #f8f8f8;
 $light: #ffffff;
+$pink: #fa8fa1;
 
 // Dedicated for button text only
 $btn-text-primary: $primary;
@@ -18,8 +19,16 @@ $theme-colors: (
   "grey": $grey,
   "light": $light,
   "accent": $accent,
-  "dark-green": $dark-green
+  "dark-green": $dark-green,
+  "pink": $pink,
 );
+
+
+@each $key, $val in $theme-colors {
+  .text-#{$key} {
+    color: $val;
+  }
+}
 
 @each $key, $val in $theme-colors {
   .icon-#{$key} {
@@ -28,7 +37,25 @@ $theme-colors: (
 }
 
 @each $key, $val in $theme-colors {
-  .text-#{$key} {
+  .icon-card-#{$key} {
     color: $val;
+    background-color: rgba($val,0.1);
+    
   }
 }
+@each $key, $val in $theme-colors{
+  .card-#{$key}{
+    &:hover{
+      background-color: $val;
+      .card-title,.card-footer,.count,.inner-card{
+        color: $light;
+      }
+      .inner-card{
+        background-color: lighten($val,3%)
+      }
+
+    }
+  }
+}
+
+
