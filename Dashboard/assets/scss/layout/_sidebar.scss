@@ -1,7 +1,9 @@
 .navbar {
     width: $navbar-width;
+    padding: $padding;
 }
 
 .nav-list {
     font-size: $navbar-icon-size;
+    padding: $padding;
 }

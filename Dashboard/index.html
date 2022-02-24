@@ -18,15 +18,15 @@
         <header class="d-flex header-height">
             <div class="icon-radix-icons_dashboard padding header-icon text-center"></div>
             <!--START: Search Section-->
-            <div class="search flex-grow-1 content-padding">
-                <input type="text" placeholder="Search" name="search">
+            <div class="search flex-grow-1 container">
+                <input type="text" placeholder="Search" name="search" class="searchbox">
                 <button type="submit" class="btn btn-primary">Search</button>
             </div>
             <!--END: Search Section-->
 
             <!--START: Notification Section-->
             <div class="notification d-flex">
-                <ul class="nav-list d-flex padding">
+                <ul class="nav-list d-flex">
                     <li class="nav-item icon-ant-design_message-outlined"></li>
                     <li class="nav-item icon-ph_bell"></li>
 
@@ -40,7 +40,7 @@
 
         <div class="d-flex flex-grow-1">
             <!--START: Sidebar div-->
-            <aside class="d-flex flex-column navbar padding" style="border: 1px solid green;">
+            <aside class="d-flex flex-column navbar" style="border: 1px solid green;">
                 <nav class="flex-grow-1">
                     <ul class="nav-list text-center">
                         <li class="nav-item icon-radix-icons_dashboard"></li>
@@ -60,64 +60,133 @@
 
             <!--START: Main div-->
 
-            <div class="d-flex flex-column flex-grow-1">
-                <div class="content-title" style="border: 1px solid blue;">
+            <div class="d-flex flex-column flex-grow-1 container">
+                <div>
                     <h1>Dashboard</h1>
                 </div>
 
-                <div class="d-flex justify-content-between content-padding" style="border: 1px solid red;">
-                    <div class="card">
-                        <span class="icon-bi_eye-fill"></span>
-                        <div>TotaL Views</div>
-                        <div>308.482</div>
-                        <div>Start from 1 January 2021</div>
+                <div class="d-flex card-container">
+                    <div class="card-wrapper">
+                        <div class="card" style="border: 1px solid blue;">
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-bi_eye-fill"></span>
+                                <span class="icon-bi_eye-fill"></span>
+                            </div>
+                            <h5>Total Views</h5>
+                            <strong>308.482</strong>
+                            <div>Start from 1 January 2021</div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <span class="icon-fa6-solid_bag-shopping"></span>
-                        <div>TotaL Products</div>
-                        <div>10.820</div>
-                        <div>+ Add New Product</div>
+
+                    <div class="card-wrapper">
+                        <div class="card" style="border: 1px solid blue;">
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-fa6-solid_bag-shopping"></span>
+                                <span class="icon-fa6-solid_bag-shopping"></span>
+                            </div>
+                            <h5>Total Products</h5>
+                            <strong>10.820</strong>
+                            <div>+ Add New Product</div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <span class="icon-fa6-solid_user-group"></span>
-                        <div>TotaL Users</div>
-                        <div>8.425</div>
-                        <div>New User added Every Week</div>
+
+                    <div class="card-wrapper">
+                        <div class="card" style="border: 1px solid blue;">
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-fa6-solid_user-group"></span>
+                                <span class="icon-fa6-solid_user-group"></span>
+                            </div>
+                            <h5>Total Users</h5>
+                            <strong>8.425</strong>
+                            <div>New User added Every Week</div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <span class="icon-bi_cart-dash-fill"></span>
-                        <div>TotaL Sells</div>
-                        <div>1.028.623</div>
-                        <div>Start from 1 January 2021</div>
+
+                    <div class="card-wrapper">
+                        <div class="card" style="border: 1px solid blue;">
+                            <div class="d-flex justify-content-between">
+                                <span class="icon-bi_cart-dash-fill"></span>
+                                <span class="icon-bi_cart-dash-fill"></span>
+                            </div>
+                            <h5>Total Sells</h5>
+                            <strong>1.028.623</strong>
+                            <div>Start from 1 January 2021</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="d-flex content-padding">
-                    <div class="d-flex flex-grow-1">
-                        <table class="flex-grow-1" style="border: 1px solid blue;">
+                <div class="d-flex">
+                    <div class="d-flex flex-grow-1 card-wrapper" style="margin:0 -15px">
+                        <table class="flex-grow-1" style="margin:0 15px; border: 1px solid blue;">
                             <thead>
-                                <tr>
-                                    <th class="th-font-weight" scope="col">Sr.No.</th>
-                                    <th class="th-font-weight" scope="col">Product Name</th>
-                                    <th class="th-font-weight" scope="col">Status</th>
-                                    <th class="th-font-weight" scope="col">Sold</th>
-                                    <th class="th-font-weight" scope="col">View</th>
+                                <tr class="text-left">
+                                    <th scope="col">Sr.No.</th>
+                                    <th></th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Sold</th>
+                                    <th scope="col">View</th>
                                 </tr>
                             </thead>
 
-                            <tbody></tbody>
+                            <tbody>
+                                <tr>
+                                    <td scope="col">1</td>
+                                    <td>image</td>
+                                    <td scope="col">News Mobile App</td>
+                                    <td scope="col">Active</td>
+                                    <td scope="col">10</td>
+                                    <td scope="col">320</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="col">2</td>
+                                    <td>image</td>
+                                    <td scope="col">40+ Landing Page</td>
+                                    <td scope="col">Active</td>
+                                    <td scope="col">10</td>
+                                    <td scope="col">320</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="col">3</td>
+                                    <td>image</td>
+                                    <td scope="col">Doctor Consultant</td>
+                                    <td scope="col">Active</td>
+                                    <td scope="col">10</td>
+                                    <td scope="col">320</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="col">4</td>
+                                    <td>image</td>
+                                    <td scope="col">Startup Illustration</td>
+                                    <td scope="col">Active</td>
+                                    <td scope="col">10</td>
+                                    <td scope="col">320</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="col">5</td>
+                                    <td>image</td>
+                                    <td scope="col">Dashboard Icons</td>
+                                    <td scope="col">Active</td>
+                                    <td scope="col">10</td>
+                                    <td scope="col">320</td>
+                                </tr>
+                            </tbody>
                         </table>
+
+
+                        <div class="d-flex graph" style="margin:0 15px;">
+                            Views & sells Graph
+                        </div>
                     </div>
 
-                    <div class="d-flex graph">
-                        Views & sells Graph
-                    </div>
                 </div>
-
+                <!--END: Main div-->
             </div>
-            <!--END: Main div-->
         </div>
-    </div>
 </body>
 
 </html>

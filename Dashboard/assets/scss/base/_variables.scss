@@ -3,23 +3,30 @@
 
 //Header
 $header-border-size: 2px;
-$header-height: 90px;
+$header-height: 80px;
 $header-icon-size: 1.625rem;
 
 //Navbar
 $navbar-width: 100px;
 $navbar-icon-size: 1.625rem;
 
+//Searchbar
+$searchbar-height: 35px;
+$searchbar-width: 20%;
 
+//main-container
+$container-padding: 1.5rem;
+
+//card-wrapper
+$card-wrapper-width: 25%;
 
 //cards
 $card-height: 250px;
-$card-width: 23.5%;
 $card-padding: 1.25rem;
+$card-margin: 15px;
 
 
 //contents
-$content-padding: 1.5rem;
 $head-size: 1.5rem;
 $title-padding: 1.25rem 1.5rem;
 
@@ -27,4 +34,8 @@ $title-padding: 1.25rem 1.5rem;
 
 ////graph
 $graph-width: 30%;
-$graph-height: 500px;
+$graph-height: 400px;
+
+
+//padding
+$padding: 1rem;

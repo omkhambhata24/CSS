@@ -2,7 +2,15 @@
 
 .card {
     height: $card-height;
-    width: $card-width;
     padding: $card-padding;
+    margin: $card-margin;
     @include border(1px, solid, $gray)
+}
+
+.card-wrapper {
+    width: $card-wrapper-width;
+}
+
+.card-container {
+    margin: 0 -15px;
 }
