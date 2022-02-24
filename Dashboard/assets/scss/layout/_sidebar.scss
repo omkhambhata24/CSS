@@ -11,3 +11,28 @@
 .nav-item {
     padding: $nav-padding;
 }
+
+.navbar-toggle {
+    background-color: $light;
+    border-radius: -10px;
+    padding: 0.25rem 0.125rem;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    .icon {
+        transition: all 0.4s;
+    }
+}
+
+#navbar-checkbox:checked ~ .navbar {
+    transform: translateX(-100px);
+    width: 0;
+    .navbar-toggle {
+        transform-origin: center;
+        transform: translateY(-50%);
+        right: -120px;
+        .icon {
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -43,7 +43,13 @@
 
         <div class="d-flex flex-grow-1">
             <!--START: Sidebar div-->
+            <input type="checkbox" id="navbar-checkbox" class="d-none">
             <aside class="d-flex flex-column navbar">
+                <div class="navbar-toggle position-absolute">
+                    <label for="navbar-checkbox">
+                        <span class="icon icon-arrow"></span>
+                    </label>
+                </div>
                 <nav class="flex-grow-1">
                     <ul class="nav-list text-center icon-grey">
                         <li class="nav-item icon-apps"></li>
@@ -207,11 +213,9 @@
                         </table>
 
 
-                        <div class="d-flex graph data" style="margin:15px;">
-                            Views & sells Graph
-                        </div>
+                        
 
-                        <!-- <div class="veiws-sells-chart w-25">
+                        <div class="veiws-sells-chart w-25">
                             <div class="d-flex justify-content-between chart-head">
                                 <span>Views & Sells</span>
                                 <div class="dropdown">This Week</div>
@@ -220,7 +224,7 @@
                                 <span class="total-views">Total Views</span>
                                 <span class="total-sells">Total Sells</span>
                             </div>
-                            <div class="d-flex justify-content-around chart h-75">
+                            <div class="d-flex justify-content-around chart h-100">
                                 <div class="position-relative bar-container h-100">
                                     <div class="position-absolute bar bar-sells"></div>
                                     <div class="position-absolute bar bar-views"></div>
@@ -255,7 +259,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                     </div>
                     <!--END: Main div-->
