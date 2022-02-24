@@ -47,11 +47,11 @@ $theme-colors: (
   .card-#{$key}{
     &:hover{
       background-color: $val;
-      .card-title,.card-footer,.count,.inner-card{
+      .card-title,.card-footer,.count,.inner-card,.inner-card-1{
         color: $light;
       }
       .inner-card{
-        background-color: lighten($val,3%)
+        background-color: lighten($val,4%)
       }
 
     }
