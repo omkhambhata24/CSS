@@ -1,9 +1,13 @@
 .navbar {
     width: $navbar-width;
     padding: $padding;
+    @include border (2px, solid, $light-grey)
 }
 
 .nav-list {
     font-size: $navbar-icon-size;
-    padding: $padding;
+}
+
+.nav-item {
+    padding: $nav-item-padding;
 }

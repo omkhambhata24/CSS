@@ -1,10 +1,16 @@
 // Header area style
 .brand-logo{
     height: $header-height;
+    
 }
 
 .header-icon{
-    font-size: $header-icon-size;
+    font-size: $icon-size;
     width: $navbar-width;
-    
+}
+
+.user-image {
+    width: $image-width;
+    height: $image-height;
+    border-radius: 50%;
 }

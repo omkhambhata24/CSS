@@ -1,8 +1,12 @@
 // Form controls styles goes here
+.search {
+    margin: 0 1.5rem;
+}
 
 .searchbox {
     @include border(1px, solid, $light-grey);
     height: $searchbar-height;
     width: $searchbar-width;
     background-color: $light-grey;
+    padding: 0 0.5rem;
 }

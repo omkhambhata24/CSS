@@ -1,11 +1,11 @@
 // Card styles goes here
 
 .card {
-    height: $card-height;
     padding: $card-padding;
     margin: $card-margin;
     background-color: $light;
-    @include border(1px, solid, $grey)
+    @include border(1px, solid, $grey);
+    border: none;
 }
 
 .card-wrapper {
@@ -14,4 +14,24 @@
 
 .card-container {
     margin: 0 -15px;
+}
+
+.inner-card {
+    width: $inner-card-width;
+    height: $inner-card-height;
+}
+
+.card-bg{
+    background-color: $light-grey;
+}
+
+.card-title {
+    font-size: $card-title;
+    padding: 1rem 0 0;
+    font-weight: 300;
+}
+
+.card-footer{
+    border-top: 1px solid #ebebeb;
+    padding: $footer-padding;
 }

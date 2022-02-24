@@ -1,14 +1,19 @@
 // All the SCSS Variables goes here
 
+// Fonts
+$font-size-base: 1rem;
+$font-family: 'Josefin Sans', sans-serif;
+$font-bold: 500;
 
 //Header
 $header-border-size: 2px;
 $header-height: 80px;
-$header-icon-size: 1.625rem;
+$icon-size: 1.625rem;
 
 //Navbar
 $navbar-width: 100px;
 $navbar-icon-size: 1.625rem;
+$nav-item-padding: 1rem;
 
 //Searchbar
 $searchbar-height: 35px;
@@ -17,25 +22,33 @@ $searchbar-width: 20%;
 //main-container
 $container-padding: 1.5rem;
 
+//count
+$count-size: 2rem;
+
 //card-wrapper
 $card-wrapper-width: 25%;
 
 //cards
-$card-height: 250px;
 $card-padding: 1.25rem;
 $card-margin: 15px;
+$card-title: 16px;
+$footer-padding: 0.5rem 0 0;
+
+
+//inner-card
+$inner-card-height: 60px;
+$inner-card-width: 60px;
 
 
 //contents
 $head-size: 1.5rem;
 $title-padding: 1.25rem 1.5rem;
 
+//images
+$image-width: 45px;
+$image-height: 45px;
+
 
 
 ////graph
 $graph-width: 30%;
-$graph-height: 400px;
-
-
-//padding
-$padding: 1rem;

@@ -20,3 +20,15 @@ $theme-colors: (
   "accent": $accent,
   "dark-green": $dark-green
 );
+
+@each $key, $val in $theme-colors {
+  .icon-#{$key} {
+    color: $val;
+  }
+}
+
+@each $key, $val in $theme-colors {
+  .text-#{$key} {
+    color: $val;
+  }
+}

@@ -1,0 +1,25 @@
+//graph
+.graph {
+    width: $graph-width;
+    @include border(1px, solid, $primary)
+}
+
+.bar-container {
+    width: 5px;
+}
+
+.bar {
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &-views {
+        background-color: #83bcbd;
+        height: 50%;
+    }
+
+    &-sells {
+        background-color: #fe764b;
+        height: 70%;
+    }
+}

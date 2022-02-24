@@ -15,10 +15,10 @@
 
         <!--START: Header div-->
 
-        <header class="d-flex align-items-center justify-content-center brand-logo">
-            <div class="icon-radix-icons_dashboard padding header-icon text-center"></div>
+        <header class="d-flex brand-logo">
+            <div class="icon-apps header-icon d-flex logo"></div>
             <!--START: Search Section-->
-            <div class="search d-flex flex-grow-1">
+            <div class="search d-flex flex-grow-1 align-items-center">
                 <input type="text" placeholder="Search for transactions,items,etc..." name="search" class="searchbox"/>
                 <button type="submit" class="btn btn-primary">Search</button>
             </div>
@@ -26,10 +26,13 @@
 
             <!--START: Notification Section-->
             <div class="notification d-flex">
-                <ul class="nav-list d-flex">
-                    <li class="nav-item icon-ant-design_message-outlined"></li>
-                    <li class="nav-item icon-ph_bell"></li>
-
+                <ul class="nav-list d-flex align-items-center icon-grey">
+                    <li class="nav-item icon-message"></li>
+                    <li class="nav-item icon-bell"></li>
+                    <li class="nav-item">
+                        <img class="user-image" src="/assets/images/sidebar-icon.jpg">
+                    </li>
+                    
                 </ul>
             </div>
             <!--END: Search Section-->
@@ -40,19 +43,19 @@
 
         <div class="d-flex flex-grow-1">
             <!--START: Sidebar div-->
-            <aside class="d-flex flex-column navbar" style="border: 2px solid #f8f8f8;">
+            <aside class="d-flex flex-column navbar">
                 <nav class="flex-grow-1">
-                    <ul class="nav-list text-center">
-                        <li class="nav-item icon-radix-icons_dashboard"></li>
-                        <li class="nav-item icon-bi_cart-dash-fill"></li>
-                        <li class="nav-item icon-fluent_notepad-20-filled"></li>
-                        <li class="nav-item icon-ci_settings-filled"></li>
+                    <ul class="nav-list text-center icon-grey">
+                        <li class="nav-item icon-apps"></li>
+                        <li class="nav-item icon-cart"></li>
+                        <li class="nav-item icon-notepad"></li>
+                        <li class="icon-settings"></li>
                     </ul>
                 </nav>
                 <nav>
-                    <ul class="nav-list text-center">
-                        <li class="nav-item icon-ep_warning-filled"></li>
-                        <li class="nav-item icon-octicon_sign-out-16"></li>
+                    <ul class="nav-list text-center icon-grey">
+                        <li class="nav-item icon-warning"></li>
+                        <li class="nav-item icon-sign-out"></li>
                     </ul>
                 </nav>
             </aside>
@@ -67,50 +70,66 @@
 
                 <div class="d-flex card-container">
                     <div class="card-wrapper">
-                        <div class="card" style="border: 1px solid blue;">
+                        <div class="card">
                             <div class="d-flex justify-content-between">
-                                <span class="icon-bi_eye-fill"></span>
-                                <span class="icon-bi_eye-fill"></span>
+                                <div class="d-flex inner-card logo icon  card-bg">
+                                    <div class="icon-eye icon-primary"></div>
+                                </div>
+                                <div class="d-flex inner-card logo icon">
+                                    <div class="icon-arrow-up icon-green"></div>
+                                </div>
                             </div>
-                            <h5>Total Views</h5>
-                            <strong>308.482</strong>
-                            <p class="border-top">Start from 1 January 2021</p>
+                            <h5 class="card-title text-grey">Total Views</h5>
+                            <h3 class="count">308.482</h3>
+                            <p class="card-footer text-grey">Start from 1 January 2021</p>
                         </div>
                     </div>
 
                     <div class="card-wrapper">
-                        <div class="card" style="border: 1px solid blue;">
+                        <div class="card">
                             <div class="d-flex justify-content-between">
-                                <span class="icon-fa6-solid_bag-shopping"></span>
-                                <span class="icon-fa6-solid_bag-shopping"></span>
+                                <div class="d-flex inner-card logo icon card-bg">
+                                    <div class="icon-shopping-bag icon-green"></div>
+                                </div>
+                                <div class="d-flex inner-card logo icon">
+                                    <div class="icon-arrow-down icon-danger"></div>
+                                </div>
                             </div>
-                            <h5>Total Products</h5>
-                            <strong>10.820</strong>
-                            <p class="border-top">+ Add New Product</p>
+                            <h5 class="card-title text-grey">Total Products</h5>
+                            <h3 class="count">10.820</h3>
+                            <p class="card-footer text-primary">+ Add New Product</p>
                         </div>
                     </div>
 
                     <div class="card-wrapper">
-                        <div class="card d-flex flex-column" style="border: 1px solid blue;">
+                        <div class="card">
                             <div class="d-flex justify-content-between">
-                                <span class="icon-fa6-solid_user-group"></span>
-                                <span class="icon-fa6-solid_user-group"></span>
+                                <div class="d-flex inner-card logo icon card-bg">
+                                    <div class="icon-user-group icon-primary"></div>
+                                </div>
+                                <div class="d-flex inner-card logo icon">
+                                    <div class="icon-arrow-up icon-green"></div>
+                                </div>
                             </div>
-                            <h5>Total Users</h5>
-                            <strong>8.425</strong>
-                            <p class="border-top">New User added Every Week</p>
+                            <h5 class="card-title text-grey">Total Users</h5>
+                            <h3 class="count">8.425</h3>
+                            <p class="card-footer text-grey">New User added Every Week</p>
                         </div>
                     </div>
 
                     <div class="card-wrapper">
-                        <div class="card" style="border: 1px solid blue;">
+                        <div class="card">
                             <div class="d-flex justify-content-between">
-                                <span class="icon-bi_cart-dash-fill"></span>
-                                <span class="icon-bi_cart-dash-fill"></span>
+                                <div class="d-flex inner-card logo icon card-bg">
+                                    <div class="icon-cart icon-dark-green"></div>
+                                </div>
+                                <div class="d-flex inner-card logo icon">
+                                    <div class="icon-arrow-up icon-green"></div>
+                                </div>
                             </div>
-                            <h5>Total Sells</h5>
-                            <strong>1.028.623</strong>
-                            <p class="border-top">Start from 1 January 2021</p>
+                            <h5 class="card-title text-grey">Total Sells</h5>
+                            <h3 class="count">1.028.623</h3>
+                            <p class="card-footer text-grey">Start from 1 January 2021</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +151,9 @@
                             <tbody>
                                 <tr>
                                     <td scope="col">1</td>
-                                    <td>image</td>
+                                    <td>
+                                        <img class="table-image" src="/assets/images/1.jpg">
+                                    </td>
                                     <td scope="col">News Mobile App</td>
                                     <td scope="col">Active</td>
                                     <td scope="col">10</td>
@@ -141,7 +162,9 @@
 
                                 <tr>
                                     <td scope="col">2</td>
-                                    <td>image</td>
+                                    <td>
+                                        <img class="table-image" src="/assets/images/1.jpg">
+                                    </td>
                                     <td scope="col">40+ Landing Page</td>
                                     <td scope="col">Active</td>
                                     <td scope="col">10</td>
@@ -150,7 +173,9 @@
 
                                 <tr>
                                     <td scope="col">3</td>
-                                    <td>image</td>
+                                    <td>
+                                        <img class="table-image" src="/assets/images/1.jpg">
+                                    </td>
                                     <td scope="col">Doctor Consultant</td>
                                     <td scope="col">Active</td>
                                     <td scope="col">10</td>
@@ -159,7 +184,9 @@
 
                                 <tr>
                                     <td scope="col">4</td>
-                                    <td>image</td>
+                                    <td>
+                                        <img class="table-image" src="/assets/images/1.jpg">
+                                    </td>
                                     <td scope="col">Startup Illustration</td>
                                     <td scope="col">Active</td>
                                     <td scope="col">10</td>
@@ -168,7 +195,9 @@
 
                                 <tr>
                                     <td scope="col">5</td>
-                                    <td>image</td>
+                                    <td>
+                                        <img class="table-image" src="/assets/images/1.jpg">
+                                    </td>
                                     <td scope="col">Dashboard Icons</td>
                                     <td scope="col">Active</td>
                                     <td scope="col">10</td>
@@ -181,12 +210,57 @@
                         <div class="d-flex graph" style="margin:15px;">
                             Views & sells Graph
                         </div>
-                    </div>
 
+                        <!-- <div class="veiws-sells-chart w-25">
+                            <div class="d-flex justify-content-between chart-head">
+                                <span>Views & Sells</span>
+                                <div class="dropdown">This Week</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="total-views">Total Views</span>
+                                <span class="total-sells">Total Sells</span>
+                            </div>
+                            <div class="d-flex justify-content-around chart h-75">
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                                <div class="position-relative bar-container h-100">
+                                    <div class="position-absolute bar bar-sells"></div>
+                                    <div class="position-absolute bar bar-views"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    </div>
+                    <!--END: Main div-->
                 </div>
-                <!--END: Main div-->
             </div>
-        </div>
 </body>
 
 </html>

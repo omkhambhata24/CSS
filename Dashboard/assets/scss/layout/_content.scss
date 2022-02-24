@@ -12,9 +12,12 @@
     padding: $title-padding;
 }
 
-//graph
-.graph {
-    height: $graph-height;
-    width: $graph-width;
-    @include border(1px, solid, $primary)
+.count {
+    font-size: $count-size;
+    padding: 0.75rem 0;
+}
+
+.table-image {
+    width: $image-width;
+    height: $image-height;
 }
