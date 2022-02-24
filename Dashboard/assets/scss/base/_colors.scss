@@ -1,9 +1,10 @@
 //Theme Colours
 $primary: #438ffe;
 $danger: rgb(240, 70, 18);
-$secondary: #fbde4a;
+$green: #8bc38a;
+$dark-green: #83bcbd;
 $accent: #021a28;
-$gray: #abb1bf;
+$grey: #abb1bf;
 $light-grey: #f8f8f8;
 $light: #ffffff;
 
@@ -13,8 +14,9 @@ $btn-text-primary: $primary;
 $theme-colors: (
   "primary": $primary,
   "danger": $danger,
-  "secondary": $secondary,
-  "gray": $gray,
+  "green": $green,
+  "grey": $grey,
   "light": $light,
-  "accent": $accent
+  "accent": $accent,
+  "dark-green": $dark-green
 );

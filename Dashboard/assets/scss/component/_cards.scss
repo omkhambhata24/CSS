@@ -4,7 +4,8 @@
     height: $card-height;
     padding: $card-padding;
     margin: $card-margin;
-    @include border(1px, solid, $gray)
+    background-color: $light;
+    @include border(1px, solid, $grey)
 }
 
 .card-wrapper {
