@@ -2,8 +2,6 @@
     padding: $card-padding;
     margin: $card-margin;
     background-color: $light;
-    @include border(1px, solid, $grey);
-    border: none;
 }
 
 .tr-bg{
@@ -24,9 +22,17 @@
     height: $image-height;
 }
 
-.col{
-    padding: 1rem;
-    text-align:left;
+.image{
+    width: 50px;
 }
 
+.col{
+    padding: 1rem 1.125rem 0;
+    text-align:left;
+}
+.table {
+    width: 65%;
+    background-color: $light;
+    height: 500px;
+}
 

@@ -1,7 +1,10 @@
 //graph
 .graph {
     width: $graph-width;
-    @include border(1px, solid, $primary)
+    @include border(1px, solid, $primary);
+    background-color: $pink;
+    padding: $card-padding;
+    // margin: $card-margin;
 }
 
 .bar-container {
