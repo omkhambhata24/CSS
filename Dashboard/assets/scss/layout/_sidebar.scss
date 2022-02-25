@@ -10,12 +10,15 @@
 
 .nav-item {
     padding: $nav-padding;
+
+    &:hover {
+        color: $primary;
+    }
 }
 
 .navbar-toggle {
     background-color: $light;
     border-radius: -10px;
-    padding: 0.25rem 0.125rem;
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
@@ -27,11 +30,14 @@
 #navbar-checkbox:checked ~ .navbar {
     transform: translateX(-100px);
     width: 0;
+    padding: 0;
     .navbar-toggle {
         transform-origin: center;
-        transform: translateY(-50%);
-        right: -120px;
+        right: -124px;
+        left: auto;
+        transition: all 0.4s;
         .icon {
+            display:block;
             transform: rotate(180deg);
         }
     }

@@ -31,6 +31,7 @@
                     <li class="nav-item icon-bell"></li>
                     <li class="nav-item">
                         <img class="user-image" src="/assets/images/sidebar-icon.jpg">
+                        <span class=" icon-arrow_downward"></span>
                     </li>
                     
                 </ul>
@@ -44,10 +45,10 @@
         <div class="d-flex flex-grow-1">
             <!--START: Sidebar div-->
             <input type="checkbox" id="navbar-checkbox" class="d-none">
-            <aside class="d-flex flex-column navbar">
+            <aside class="d-flex flex-column navbar position-relative">
                 <div class="navbar-toggle position-absolute">
                     <label for="navbar-checkbox">
-                        <span class="icon icon-arrow"></span>
+                        <span class="icon icon-arrow-left"></span>
                     </label>
                 </div>
                 <nav class="flex-grow-1">
@@ -55,7 +56,7 @@
                         <li class="nav-item icon-apps"></li>
                         <li class="nav-item icon-cart"></li>
                         <li class="nav-item icon-notepad"></li>
-                        <li class="icon-settings"></li>
+                        <li class="nav-item icon-settings"></li>
                     </ul>
                 </nav>
                 <nav>
@@ -142,80 +143,82 @@
 
                 <div class="d-flex">
                     <div class="d-flex flex-grow-1" style="margin:0 -15px">
-                        <table class="flex-grow-1 data" style="border: 1px solid blue;">
+                        <table class="flex-grow-1 data table-border">
                             <thead>
-                                <tr class="text-left">
-                                    <th scope="col">Sr.No.</th>
+                                <tr>
+                                    <th class="col">Sr.No.</th>
                                     <th></th>
-                                    <th scope="col">Product Name</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Sold</th>
-                                    <th scope="col">View</th>
+                                    <th class="col">Product Name</th>
+                                    <th class="col">Status</th>
+                                    <th class="col">Sold</th>
+                                    <th class="col">View</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                <tr>
-                                    <td scope="col">1</td>
-                                    <td>
+                                <tr class="tr-bg">
+                                    <td class="table-cell">1</td>
+                                    <td class="table-cell">
                                         <img class="table-image" src="/assets/images/1.jpg">
                                     </td>
-                                    <td scope="col">News Mobile App</td>
-                                    <td scope="col">Active</td>
-                                    <td scope="col">10</td>
-                                    <td scope="col">320</td>
+                                    <td class="table-cell">News Mobile App</td>
+                                    <td class="table-cell">Active</td>
+                                    <td class="table-cell">10</td>
+                                    <td class="table-cell">320</td>
                                 </tr>
 
-                                <tr>
-                                    <td scope="col">2</td>
-                                    <td>
+                                <tr class="tr-bg">
+                                    <td class="table-cell">2</td>
+                                    <td class="table-cell">
                                         <img class="table-image" src="/assets/images/1.jpg">
                                     </td>
-                                    <td scope="col">40+ Landing Page</td>
-                                    <td scope="col">Active</td>
-                                    <td scope="col">10</td>
-                                    <td scope="col">320</td>
+                                    <td class="table-cell">40+ Landing Page</td>
+                                    <td class="table-cell">Active</td>
+                                    <td class="table-cell">10</td>
+                                    <td class="table-cell">320</td>
                                 </tr>
 
-                                <tr>
-                                    <td scope="col">3</td>
-                                    <td>
+                                <tr class="tr-bg">
+                                    <td class="table-cell">3</td>
+                                    <td class="table-cell">
                                         <img class="table-image" src="/assets/images/1.jpg">
                                     </td>
-                                    <td scope="col">Doctor Consultant</td>
-                                    <td scope="col">Active</td>
-                                    <td scope="col">10</td>
-                                    <td scope="col">320</td>
+                                    <td class="table-cell">Doctor Consultant</td>
+                                    <td class="table-cell">Active</td>
+                                    <td class="table-cell">10</td>
+                                    <td class="table-cell">320</td>
                                 </tr>
 
-                                <tr>
-                                    <td scope="col">4</td>
-                                    <td>
+                                <tr class="tr-bg">
+                                    <td class="table-cell">4</td>
+                                    <td class="table-cell">
                                         <img class="table-image" src="/assets/images/1.jpg">
                                     </td>
-                                    <td scope="col">Startup Illustration</td>
-                                    <td scope="col">Active</td>
-                                    <td scope="col">10</td>
-                                    <td scope="col">320</td>
+                                    <td class="table-cell">Startup Illustration</td>
+                                    <td class="table-cell">Active</td>
+                                    <td class="table-cell">10</td>
+                                    <td class="table-cell">320</td>
                                 </tr>
 
-                                <tr>
-                                    <td scope="col">5</td>
-                                    <td>
+                                <tr class="tr-bg">
+                                    <td class="table-cell">5</td>
+                                    <td class="table-cell">
                                         <img class="table-image" src="/assets/images/1.jpg">
                                     </td>
-                                    <td scope="col">Dashboard Icons</td>
-                                    <td scope="col">Active</td>
-                                    <td scope="col">10</td>
-                                    <td scope="col">320</td>
+                                    <td class="table-cell">Dashboard Icons</td>
+                                    <td class="table-cell">Active</td>
+                                    <td class="table-cell">10</td>
+                                    <td class="table-cell">320</td>
                                 </tr>
                             </tbody>
                         </table>
 
-
+                        <div class="d-flex graph data" style="margin:15px;">
+                            Views & sells Graph
+                        </div>
                         
 
-                        <div class="veiws-sells-chart w-25">
+                        <!-- <div class="veiws-sells-chart">
                             <div class="d-flex justify-content-between chart-head">
                                 <span>Views & Sells</span>
                                 <div class="dropdown">This Week</div>
@@ -224,7 +227,7 @@
                                 <span class="total-views">Total Views</span>
                                 <span class="total-sells">Total Sells</span>
                             </div>
-                            <div class="d-flex justify-content-around chart h-100">
+                            <div class="d-flex justify-content-around graph h-100">
                                 <div class="position-relative bar-container h-100">
                                     <div class="position-absolute bar bar-sells"></div>
                                     <div class="position-absolute bar bar-views"></div>
@@ -258,7 +261,7 @@
                                     <div class="position-absolute bar bar-views"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     </div>

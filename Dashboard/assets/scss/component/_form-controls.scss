@@ -9,4 +9,16 @@
     width: $searchbar-width;
     background-color: $light-grey;
     padding: 0 0.5rem;
+
+    input{
+        outline: none;
+    }
+
+    &::placeholder{
+        color: $grey;
+    }
+}
+
+input{
+    outline: none;
 }
