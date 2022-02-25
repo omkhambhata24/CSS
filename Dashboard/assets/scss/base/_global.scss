@@ -171,28 +171,28 @@ a {
 }
 
 
-// // START: Scrollbar Styles
-// ////////////////////////////////////////////////////////////////////////
+// START: Scrollbar Styles
+////////////////////////////////////////////////////////////////////////
 
-// * {
-//     scrollbar-width: thin;
-//     scrollbar-color: #979597 #ffffff;
-//   }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #979597 #ffffff;
+  }
 
-//   /* Chrome, Edge, and Safari */
-//   *::-webkit-scrollbar {
-//     width: 16px;
-//   }
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 17px;
+  }
 
-//   *::-webkit-scrollbar-track {
-//     background: #ffffff;
-//   }
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
 
-//   *::-webkit-scrollbar-thumb {
-//     background-color: #979597;
-//     border-radius: 15px;
-//     border: 6px solid #ffffff;
-//   }
+  *::-webkit-scrollbar-thumb {
+    background-color: #979597;
+    border-radius: 18px;
+    border: 6px solid #ffffff;
+  }
 
-//   // END: Scrollbar Styles
-// ////////////////////////////////////////////////////////////////////////
+  // END: Scrollbar Styles
+////////////////////////////////////////////////////////////////////////
