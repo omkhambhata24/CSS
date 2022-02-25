@@ -13,4 +13,14 @@
     width: $image-width;
     height: $image-height;
     border-radius: 50%;
+
+    @include for-tablet {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include for-phone {
+        width: 30px;
+        height: 30px;
+    }
 }

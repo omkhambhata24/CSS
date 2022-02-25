@@ -4,7 +4,13 @@
     height: 35px;
     width: 70px;
     border:none;
+
+    @include for-phone {
+        width: 50px;
+        font-weight: 200;
+    }
 }
+
 
 .btn-primary {
     background-color: $primary;

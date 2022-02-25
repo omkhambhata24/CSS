@@ -2,17 +2,30 @@
 
 .card {
     padding: $card-padding;
-    margin: $card-margin;
     background-color: $light;
     @include border(1px, solid, $grey);
     border: none;
 }
 
 .card-wrapper {
-    width: $card-wrapper-width;
+    width: 25%;
+    padding: 0px 15px;
+    margin-bottom: 1.25rem;
+
+    @include for-tablet {
+        width: 50%;
+        margin-bottom: 1.25rem;
+    }
+
+    @include for-phone {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
 .card-container {
+    width: 100%;
+    flex-wrap: wrap;
     margin: 0 -15px;
 }
 
@@ -26,15 +39,13 @@
     height: $inner-card-height;
 }
 
-
-
 .card-title {
     font-size: $card-title;
     padding: 1rem 0 0;
     font-weight: 300;
 }
 
-.card-footer{
+.card-footer {
     border-top: 1px solid #ebebeb;
     padding: $footer-padding;
 }

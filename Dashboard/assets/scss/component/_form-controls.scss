@@ -17,6 +17,14 @@
     &::placeholder{
         color: $grey;
     }
+
+    @include for-tablet {
+        width: 215px;
+    }
+
+    @include for-phone {
+        width: 120px;
+    }
 }
 
 input{
