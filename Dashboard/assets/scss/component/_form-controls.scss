@@ -25,6 +25,10 @@
     @include for-phone {
         width: 120px;
     }
+
+    @include for-mini {
+        width: 150px;
+    }
 }
 
 input{

@@ -2,6 +2,10 @@
     padding: $card-padding;
     margin: $card-margin;
     background-color: $light;
+
+    @include for-phone{
+        padding: 0.75rem;
+    }
 }
 
 .tr-bg{
@@ -15,6 +19,19 @@
 .table-cell {
     border-bottom: 12px solid #ffffff;
     padding: 0.75rem 1.125rem;
+
+    @include for-tablet{
+        font-weight: 400;
+    }
+
+    @include for-phone {
+        font-size: 0.875rem;
+    }
+
+    @include for-mini {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
 }
 
 .table-image {
@@ -29,11 +46,21 @@
 .col{
     padding: 1rem 1.125rem 0;
     text-align:left;
+
+    @include for-mini {
+        font-size: 0.875rem;
+    }
 }
+
+
 .table {
     width: 65%;
     background-color: $light;
     height: 500px;
+
+    @include for-desktop{
+        width: 60%;
+    }
 
     @include for-tablet{
         width: 100%;

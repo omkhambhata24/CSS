@@ -1,11 +1,29 @@
 .navbar {
     width: $navbar-width;
     padding: $nav-padding;
-    @include border (2px, solid, $light-grey)
+    @include border (2px, solid, $light-grey);
+
+    @include for-phone {
+        width: 60px;
+        padding: 0.125rem;
+    }
+
+    @include for-mini {
+        width: 50px;
+        padding: 0.125rem;
+    }
 }
 
 .nav-list {
     font-size: $navbar-icon-size;
+
+    @include for-phone{
+        font-size: 1.25rem;
+    }
+
+    @include for-phone{
+        font-size: 1rem;
+    }
 }
 
 .nav-item {
@@ -13,6 +31,10 @@
 
     &:hover {
         color: $primary;
+    }
+
+    @include for-mini {
+        padding: 0.75rem;
     }
 }
 

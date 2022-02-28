@@ -12,14 +12,20 @@
     padding: 0px 15px;
     margin-bottom: 1.25rem;
 
+    @include for-laptop {
+       
+    }
+
     @include for-tablet {
         width: 50%;
         margin-bottom: 1.25rem;
+        
     }
 
     @include for-phone {
         width: 100%;
         margin-bottom: 1rem;
+        padding: 0;
     }
 }
 
@@ -27,6 +33,19 @@
     width: 100%;
     flex-wrap: wrap;
     margin: 0 -15px;
+
+    @include for-laptop {
+      
+    }
+
+
+    @include for-tablet {
+        margin-left: 0;
+    }
+
+    @include for-phone {
+        margin: 0;
+    }
 }
 
 .inner-card {
