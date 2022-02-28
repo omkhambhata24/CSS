@@ -1,10 +1,6 @@
 // Header area style
 .brand-logo {
     height: $header-height;
-
-    @include for-phone {
-        height: 80px;
-    }
 }
 
 .header-icon {
@@ -53,10 +49,6 @@ h1 {
     @include for-phone {
         padding: 0 0 0.5rem;
     }
-}
-
-.menu {
-    display:none;
 }
 
 #headercheckbox:checked ~ .dropdown .temp {
