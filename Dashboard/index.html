@@ -25,17 +25,23 @@
             <!--END: Search Section-->
 
             <!--START: Notification Section-->
-            <div class="d-flex">
-                <ul class="nav-list d-flex align-items-center icon-grey">
-                    <li class="nav-item icon-message"></li>
-                    <li class="nav-item icon-bell"></li>
-                    <li class="nav-item">
-                        <img class="user-image" src="/assets/images/sidebar-icon.jpg">
-                        <span class=" icon-arrow_downward"></span>
-                    </li>
+            <input type="checkbox" id="headercheckbox" class="d-none">
+            <div class="dropdown d-flex justify-content-between align-items-center">
+                <label for="headercheckbox"><span class="menu icon-arrow_downward"></span></label>
+                <div class="d-flex align-items-center temp">
+                    <ul class="header d-flex align-items-center icon-grey notification">
+                        <li class="nav-item-1 icon-message"></li>
+                        <li class="nav-item-1 icon-bell"></li>
+                        <li class="nav-item-1">
+                            <img class="user-image" src="/assets/images/sidebar-icon.jpg">
+                            <span class=" icon-arrow_downward"></span>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
+
+
             <!--END: Search Section-->
 
         </header>
@@ -146,8 +152,9 @@
                 <!-- Table -->
 
                 <div class="d-flex flex-wrap">
-                    <div class="d-flex flex-grow-1 flex-column overflow-hidden table" >
+                    <div class="d-flex flex-grow-1 flex-column overflow-hidden table">
                         <div class="d-flex flex-column">
+                            <!-- overflow-auto-->
                             <table class=" flex-grow-1 table-border">
                                 <thead>
                                     <tr>

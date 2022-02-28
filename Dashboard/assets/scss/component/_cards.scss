@@ -68,3 +68,13 @@
     border-top: 1px solid #ebebeb;
     padding: $footer-padding;
 }
+
+.count {
+    font-size: $count-size;
+    font-weight:500;
+    padding: 0.75rem 0;
+
+    @include for-phone {
+        font-size: 1.625rem;
+    }
+}

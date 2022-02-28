@@ -6,8 +6,7 @@
     border:none;
 
     @include for-phone {
-        width: 50px;
-        font-weight: 200;
+        display: none;
     }
 }
 

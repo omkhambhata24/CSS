@@ -19,15 +19,17 @@
     }
 
     @include for-tablet {
-        width: 215px;
+        width: 220px;
     }
 
     @include for-phone {
-        width: 120px;
+        width: 180px;
+        height: 30px
     }
 
     @include for-mini {
         width: 150px;
+        height: 25px;
     }
 }
 

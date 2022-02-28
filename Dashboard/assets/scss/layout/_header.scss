@@ -1,14 +1,17 @@
 // Header area style
-.brand-logo{
+.brand-logo {
     height: $header-height;
-    
+
+    @include for-phone {
+        height: 80px;
+    }
 }
 
-.header-icon{
+.header-icon {
     font-size: $icon-size;
     width: $navbar-width;
 
-    @include for-phone{
+    @include for-phone {
         font-size: 1.5rem;
         width: 60px;
     }
@@ -30,9 +33,64 @@
     }
 }
 
-h1{
+.header {
+    font-size: $navbar-icon-size;
+}        
 
-    @include for-tablet{
-        padding: 0 0.1rem 0.625rem;
+.nav-item-1 {
+    padding: $nav-padding;
+
+    &:hover {
+        color: $primary;
     }
 }
+
+h1 {
+    @include for-tablet {
+        padding: 0 1rem 0.625rem;
+    }
+
+    @include for-phone {
+        padding: 0 0 0.5rem;
+    }
+}
+
+.menu {
+    display:none;
+}
+
+#headercheckbox:checked ~ .dropdown .temp {
+    display: none;
+}   
+ 
+
+    @include for-tablet {
+        .dropdown {
+            position: relative;
+            .menu {
+                display: block;
+                padding-right: 1.5rem;
+            }
+            .temp {
+                font-size: 1.5rem;
+                flex-direction: column-reverse;
+                justify-content: space-evenly;
+                position: absolute;
+                background-color: $light;
+                border: 2px solid grey;
+                z-index: 9;
+                top: 65px;
+                right: 25px;
+
+                .nav-item-1 {
+                    font-size: 1.5rem;
+                }
+
+                .user-image {
+                    max-width: 35px;
+                    max-height: 35px;
+                }
+            }
+        }
+    }
+
