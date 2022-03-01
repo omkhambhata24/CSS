@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?v1q6i');
-  src:  url('fonts/app.eot?v1q6i#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?v1q6i') format('truetype'),
-    url('fonts/app.woff?v1q6i') format('woff'),
-    url('fonts/app.svg?v1q6i#app') format('svg');
+  src:  url('fonts/app.eot?sf7hms');
+  src:  url('fonts/app.eot?sf7hms#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?sf7hms') format('truetype'),
+    url('fonts/app.woff?sf7hms') format('woff'),
+    url('fonts/app.svg?sf7hms#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,9 +24,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bitcoin:before {
+.icon-filter:before {
+  content: "\e905";
+}
+.icon-arrow_downward:before {
+  content: "\e90b";
+}
+.icon-money:before {
   content: "\e902";
-  color: #f7931a;
+}
+.icon-trash:before {
+  content: "\e900";
 }
 .icon-cart:before {
   content: "\e901";
@@ -39,12 +47,6 @@
 }
 .icon-bell:before {
   content: "\e909";
-}
-.icon-trash:before {
-  content: "\e900";
-}
-.icon-arrow_downward:before {
-  content: "\e90b";
 }
 .icon-tag:before {
   content: "\e935";

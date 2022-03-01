@@ -1,15 +1,62 @@
 .navbar {
     width: $navbar-width;
-    padding: $navbar-padding;
+    // padding: $navbar-padding;
+
     @include border (2px, solid, $grey);
 }
 
 .icon{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: 1rem;
 }
 
-.icon-text {
-    font-size: 1.25rem;
-    padding: 0.875rem;
+.nav-head {
+    letter-spacing: 2px;
+    padding:1rem 1.5rem;
+    font-size: 1.125rem;
 }
+
+.nav-item {
+    padding: $nav-item-padding;
+    color: $text;
+
+    &:hover {
+        border-left: 3px solid $success;
+        color: $success;
+        background-color: lighten($success, 62%);
+    }
+}
+
+.navbar-toggle {
+    background-color: $light;
+    border-radius: -10px;
+    left:90%;
+    transform: translateY(-50%);
+    transition: all ease-in 0.4s;
+    .icon {
+        transition: all ease-in 0.4s;
+    }
+}
+
+#navbar-checkbox:checked ~ .navbar {
+    transform: translateX(-85px);
+    width: 0;
+    padding: 0;
+
+    .nav-head{
+        opacity: 0;
+    }
+    
+    .navbar-toggle {
+        transform-origin: center;
+        right: -125px;
+        left: auto;
+        transition: all ease-in 0.4s;
+        .icon {
+            display:block;
+            transform: rotate(180deg);
+        }
+        
+    }
+}
+

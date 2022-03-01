@@ -1,9 +1,24 @@
 table{
     border-collapse: collapse;
+    background-color: $light;
 }
 
 .table-image {
     width: $image-width;
     height: $image-height;
     margin: 0.25rem 0.5rem 0;
+}
+
+.table-cell {
+    border-bottom: 2px solid $grey;
+    padding: 0.75rem;
+}
+
+.table-head{
+    color: $text;
+    border-bottom: 2px solid $grey;
+}
+
+.col{
+    padding:0.825rem
 }

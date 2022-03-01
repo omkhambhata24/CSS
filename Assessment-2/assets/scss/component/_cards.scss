@@ -3,20 +3,18 @@
 .card-container {
     width: 100%;
     flex-wrap: wrap;
+    margin: 0 -15px;
 }  
 
 .card-wrapper {
     width: 16.66%;
     padding: 0px 15px;
-    margin-bottom: 1.25rem;
 }
 
 .card {
     padding: $card-padding;
     background-color: $light;
-    @include border(1px, solid, $grey);
     border: none;
-    margin: 0 -15px;
     border-radius: 8px;
 }
 
@@ -28,4 +26,9 @@
 
 .card-logo {
     font-size: 1.625rem;
+}
+
+.count {
+    font-size: 1.25rem;
+    font-weight: 700;
 }

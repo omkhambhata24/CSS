@@ -1,6 +1,6 @@
 .container {
     padding: $main-padding;
-    background-color: $grey;
+    background-color: $dark-grey;
 }
 
 .header-text{
@@ -10,3 +10,8 @@
 .header-button {
     padding-bottom: 1.25rem;
 }
+
+.content-title {
+    padding: 3rem 0;
+}
+

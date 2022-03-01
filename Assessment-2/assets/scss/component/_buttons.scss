@@ -1,8 +1,8 @@
 // Button styles goes here
 
 .btn {
-    height: 40px;
-    width: 120px;
+    height: 50px;
+    width: 200px;
     border-radius: 6px;
     border:none;
     font-size: 1.25rem;
@@ -16,5 +16,6 @@
 .btn-success {
     background-color: $success;
     color: $light;
+    padding-right: 2rem;
     
 }

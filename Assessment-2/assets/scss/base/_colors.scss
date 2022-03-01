@@ -2,6 +2,7 @@
 $primary: #4c98db;
 $danger: #d16c70;
 $success: #00b11b;
+$dark-grey: #f6f6f6;
 $grey: #fafafa;
 $light: #ffffff;
 $pink: #fa8fa1;
@@ -24,6 +25,7 @@ $theme-colors: (
   "tertiary": $tertiary,
   "secondary": $secondary,
   "text": $text,
+  "dark-grey": $dark-grey,
 );
 
 @each $key, $val in $theme-colors {
@@ -37,5 +39,20 @@ $theme-colors: (
     color: $val;
     background-color: rgba($val,0.1);
     
+  }
+}
+
+@each $key, $val in $theme-colors{
+  .card-#{$key}{
+    &:hover{
+      background-color: lighten($val, 5%);
+      .header-text,.count, .inner-card{
+        color: $light;
+      }
+      .inner-card{
+        background-color: lighten($val,15%)
+      }
+
+    }
   }
 }

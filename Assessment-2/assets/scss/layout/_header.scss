@@ -4,3 +4,14 @@
     width: $navbar-width;
     height: 70px;
 }
+
+.profile {
+    width: $profile-width;
+    height: $profile-height;
+    border-radius: 50%;
+}
+
+.profile-text {
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
