@@ -1,10 +1,14 @@
 //Theme Colours
-$primary: #438ffe;
-$danger: rgb(240, 70, 18);
+$primary: #4c98db;
+$danger: #d16c70;
 $success: #00b11b;
 $grey: #fafafa;
 $light: #ffffff;
 $pink: #fa8fa1;
+$purple: #6465eb;
+$tertiary: #e79537;
+$secondary: #279d70;
+$text: #6b6a6e;
 
 // Dedicated for button text only
 $btn-text-primary: $primary;
@@ -16,4 +20,22 @@ $theme-colors: (
   "grey": $grey,
   "light": $light,
   "pink": $pink,
+  "purple": $purple,
+  "tertiary": $tertiary,
+  "secondary": $secondary,
+  "text": $text,
 );
+
+@each $key, $val in $theme-colors {
+  .icon-#{$key} {
+    color: $val;
+  }
+}
+
+@each $key, $val in $theme-colors {
+  .icon-card-#{$key} {
+    color: $val;
+    background-color: rgba($val,0.1);
+    
+  }
+}

@@ -17,10 +17,10 @@
         <!-- Start: Header Section-->
 
         <header class="d-flex">
-            <div class="d-flex brand-logo">
+            <div class="d-flex brand-logo align-items-center justify-content-center">
                 Tally Scan
             </div>
-            <div class="d-flex flex-grow-1">
+            <div class="d-flex flex-grow-1 align-items-center">
                 Dashboard
             </div>
         </header>
@@ -34,19 +34,39 @@
             <aside class="d-flex flex-column navbar">
 
                 <div class="d-flex flex-column">
-                    <h4> GENERAL </h4>
-                    <div>Search</div>
-                    <div>Alerts</div>
-                    <div>Tags</div>
-
+                    <h4 class="icon-text"> GENERAL </h4>
+                    <div class="d-flex">
+                        <div class="icon icon-search"></div>
+                        <span class="icon-text">Search</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon icon-bell"></div>
+                        <span class="icon-text">alerts</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon icon-tag"></div>
+                        <span class="icon-text">Tags</span>
+                    </div>
                 </div>
 
                 <div class="d=flex flex-column">
-                    <h4> OTHERS </h4>
-                    <div>Settings</div>
-                    <div>Tips</div>
-                    <div>Trash</div>
-                    <div>Log-Out</div>
+                    <h4 class="icon-text"> OTHERS </h4>
+                    <div class="d-flex">
+                        <div class="icon icon-settings"></div>
+                        <span class="icon-text">Settings</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon icon-sun"></div>
+                        <span class="icon-text">Tips</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon icon-trash"></div>
+                        <span class="icon-text">Trash</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icon icon-sign-out"></div>
+                        <span class="icon-text">Logout</span>
+                    </div>
                 </div>
 
             </aside>
@@ -56,197 +76,248 @@
             <!-- Start: Main Section-->
 
             <div class="d-flex flex-grow-1 flex-column container">
-                <div class="d-flex justify-content-end">
+                <div class="d-flex justify-content-end header-button">
                     <button type="submit" class="btn btn-success">Filter</button>
                 </div>
 
                 <!-- start: Card Section-->
                 <div class="card-container d-flex">
-                    <div class="card wrapper d-flex">
-                        <div class="d-flex">
-                            <div class="d-flex flex-column">
-                                <div>Scans</div>
-                                <div>350</div>
-                            </div>
-                            <div class="d-flex">
-                                Icon
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card wrapper d-flex">
-                        <div class="d-flex">
-                            <div class="d-flex flex-column">
-                                <div>Lists</div>
-                                <div>350</div>
-                            </div>
-                            <div class="d-flex">
-                                Icon
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="header-text">Scans</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card logo card-logo icon-card-text">
+                                    <div class="icon-barcode"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card wrapper d-flex">
-                        <div class="d-flex">
-                            <div class="d-flex flex-column">
-                                <div>Cost</div>
-                                <div>350</div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="header-text">Lists</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card logo card-logo icon-card-primary">
+                                    <div class="icon-list"></div>
+                                </div>
                             </div>
-                            <div class="d-flex">
-                                <div class="icon-bitcoin"></div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="header-text">Costs</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card logo card-logo icon-card-secondary">
+                                    <div class="icon-bitcoin"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card wrapper d-flex">
-                        <div class="d-flex">
-                            <div class="d-flex flex-column">
-                                <div>Buy Now</div>
-                                <div>350</div>
-                            </div>
-                            <div class="d-flex">
-                                Icon
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card wrapper d-flex">
-                        <div class="d-flex">
-                            <div class="d-flex flex-column">
-                                <div>Buy Cheaper</div>
-                                <div>350</div>
-                            </div>
-                            <div class="d-flex">
-                                Icon
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="header-text">Buy Now</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card logo card-logo icon-card-tertiary">
+                                    <div class="icon-cart"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card wrapper d-flex">
-                        <div class="d-flex">
-                            <div class="d-flex flex-column">
-                                <div>Buy Healthier</div>
-                                <div>350</div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="header-text">Buy Cheaper</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card logo card-logo icon-card-purple">
+                                    <div class="icon-dollar"></div>
+                                </div>
                             </div>
-                            <div class="d-flex">
-                                Icon
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <div class="header-text">Buy Healthier</div>
+                                    <div>350</div>
+                                </div>
+                                <div class="d-flex inner-card logo card-logo icon-card-danger">
+                                    <div class="icon-heart"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- End: Card Section-->    
+                <!-- End: Card Section-->
 
                 <h3> Recent Activity</h3>
 
                 <div>
                     <table class="w-100">
-                  
-                      <thead>
-                        <tr class="text-left">
-                          <th scope="col">Item</th>
-                          <th scope="col">Date</th>
-                          <th scope="col">Type</th>
-                          <th scope="col">Est. Cost</th>
-                          <th scope="col">Last</th>
-                          <th scope="col">List</th>
-                          <th scope="col">Auto</th>
-                          <th scope="col">Buy Now</th>
-                        </tr>
-                      </thead>
 
-                      <tbody>
-                        <tr  >
-                          <td>Skippy Peanut Butter 160z</td>
-                          <td> 07 Nov, 8:35pm </td>
-                          <td> Discarded </td>
-                          <td>$40.27</td>
-                          <td> 18 Aug </td>
-                          <td> Grocery </td>
-                          <td>No</td>
-                          <td> Amazon </td>
-                        </tr>
+                        <thead>
+                            <tr class="text-left header-text">
+                                <th scope="col">Item</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Est. Cost</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">List</th>
+                                <th scope="col">Auto</th>
+                                <th scope="col">Buy Now</th>
+                            </tr>
+                        </thead>
 
-                        <tr  >
-                            <td>Skippy Peanut Butter 160z</td>
-                            <td> 07 Nov, 8:35pm </td>
-                            <td> Discarded </td>
-                            <td>$40.27</td>
-                            <td> 18 Aug </td>
-                            <td> Grocery </td>
-                            <td>No</td>
-                            <td> Amazon </td>
-                          </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
 
-                          <tr  >
-                            <td>Skippy Peanut Butter 160z</td>
-                            <td> 07 Nov, 8:35pm </td>
-                            <td> Discarded </td>
-                            <td>$40.27</td>
-                            <td> 18 Aug </td>
-                            <td> Grocery </td>
-                            <td>No</td>
-                            <td> Amazon </td>
-                          </tr>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
 
-                          <tr  >
-                            <td>Skippy Peanut Butter 160z</td>
-                            <td> 07 Nov, 8:35pm </td>
-                            <td> Discarded </td>
-                            <td>$40.27</td>
-                            <td> 18 Aug </td>
-                            <td> Grocery </td>
-                            <td>No</td>
-                            <td> Amazon </td>
-                          </tr>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
 
-                          <tr  >
-                            <td>Skippy Peanut Butter 160z</td>
-                            <td> 07 Nov, 8:35pm </td>
-                            <td> Discarded </td>
-                            <td>$40.27</td>
-                            <td> 18 Aug </td>
-                            <td> Grocery </td>
-                            <td>No</td>
-                            <td> Amazon </td>
-                          </tr>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
 
-                          <tr  >
-                            <td>Skippy Peanut Butter 160z</td>
-                            <td> 07 Nov, 8:35pm </td>
-                            <td> Discarded </td>
-                            <td>$40.27</td>
-                            <td> 18 Aug </td>
-                            <td> Grocery </td>
-                            <td>No</td>
-                            <td> Amazon </td>
-                          </tr>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
 
-                          <tr  >
-                            <td>Skippy Peanut Butter 160z</td>
-                            <td> 07 Nov, 8:35pm </td>
-                            <td> Discarded </td>
-                            <td>$40.27</td>
-                            <td> 18 Aug </td>
-                            <td> Grocery </td>
-                            <td>No</td>
-                            <td> Amazon </td>
-                          </tr>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
 
-                          <tr  >
-                            <td>Skippy Peanut Butter 160z</td>
-                            <td> 07 Nov, 8:35pm </td>
-                            <td> Discarded </td>
-                            <td>$40.27</td>
-                            <td> 18 Aug </td>
-                            <td> Grocery </td>
-                            <td>No</td>
-                            <td> Amazon </td>
-                          </tr>
-                      </tbody>
-                  
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+                                    </figure>
+                                </td>
+                                <td> 07 Nov, 8:35pm </td>
+                                <td> Discarded </td>
+                                <td>$40.27</td>
+                                <td> 18 Aug </td>
+                                <td> Grocery </td>
+                                <td>No</td>
+                                <td> Amazon </td>
+                            </tr>
+                        </tbody>
+
                     </table>
-                  </div>
+                </div>
 
             </div>
 

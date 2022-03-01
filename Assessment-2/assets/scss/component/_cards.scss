@@ -1,1 +1,31 @@
 // Card styles goes here
+
+.card-container {
+    width: 100%;
+    flex-wrap: wrap;
+}  
+
+.card-wrapper {
+    width: 16.66%;
+    padding: 0px 15px;
+    margin-bottom: 1.25rem;
+}
+
+.card {
+    padding: $card-padding;
+    background-color: $light;
+    @include border(1px, solid, $grey);
+    border: none;
+    margin: 0 -15px;
+    border-radius: 8px;
+}
+
+.inner-card {
+    width: $inner-card-width;
+    height: $inner-card-height;
+    border-radius: 50%;
+}
+
+.card-logo {
+    font-size: 1.625rem;
+}

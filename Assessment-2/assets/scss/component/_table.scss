@@ -1,3 +1,9 @@
 table{
     border-collapse: collapse;
 }
+
+.table-image {
+    width: $image-width;
+    height: $image-height;
+    margin: 0.25rem 0.5rem 0;
+}

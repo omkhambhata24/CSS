@@ -3,3 +3,13 @@
     padding: $navbar-padding;
     @include border (2px, solid, $grey);
 }
+
+.icon{
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.icon-text {
+    font-size: 1.25rem;
+    padding: 0.875rem;
+}
