@@ -34,8 +34,8 @@
     flex-wrap: wrap;
     margin: 0 -15px;
 
-    @include for-laptop {
-      
+    @include for-desktop {
+      margin-left: 0;
     }
 
 

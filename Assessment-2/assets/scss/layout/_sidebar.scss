@@ -8,12 +8,21 @@
 .icon{
     font-size: 1.5rem;
     padding: 1rem;
+
+    @include for-tablet{
+        font-size: 1.125rem;
+        padding: 0.75rem;
+    }
 }
 
 .nav-head {
     letter-spacing: 2px;
     padding:1rem 1.5rem;
     font-size: 1.125rem;
+
+    @include for-tablet {
+        font-size: 1rem;
+    }
 }
 
 .nav-item {
@@ -28,8 +37,9 @@
 }
 
 .navbar-toggle {
-    background-color: $light;
+    color: $purple;
     border-radius: -10px;
+    top: 3%;
     left:90%;
     transform: translateY(-50%);
     transition: all ease-in 0.4s;
@@ -46,7 +56,7 @@
     .nav-head{
         opacity: 0;
     }
-    
+
     .navbar-toggle {
         transform-origin: center;
         right: -125px;

@@ -28,6 +28,13 @@ $theme-colors: (
   "dark-grey": $dark-grey,
 );
 
+$types: (
+  "discarded": $danger,
+  "want": $secondary,
+  "waiting": $tertiary,
+  "cancelled": $text,
+);
+
 @each $key, $val in $theme-colors {
   .icon-#{$key} {
     color: $val;

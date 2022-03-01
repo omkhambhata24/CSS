@@ -17,22 +17,27 @@
         <!-- Start: Header Section-->
 
         <header class="d-flex">
-            <div class="d-flex brand-logo align-items-center justify-content-center">
-                Tally Scan
+            <div class="d-flex brand-logo head-title logo">
+                TallyScan
             </div>
-            <div class="d-flex flex-grow-1 align-items-center">
+            <div class="head-title d-flex flex-grow-1 align-items-center">
                 Dashboard
             </div>
-            <div class="d-flex align-items-center">
-                <div class="icon icon-bell"></div>
-                <div class="d-flex align-items-center">
-                    <figure>
-                        <img class="profile" src="/assets/images/sidebar-icon.jpg">
-                    </figure>
-                </div>
-                <div class="profile-text">Mr.Robot</div>
-                <div class="icon icon-arrow_downward"></div>
 
+            <input type="checkbox" id="headercheckbox" class="d-none">
+            <div class="dropdown d-flex justify-content-between align-items-center">
+                <label for="headercheckbox"><span class="menu icon-arrow_downward"></span></label>
+                <div class="d-flex align-items-center temp">
+                    <div class="icon icon-bell"></div>
+                    <div class="d-flex align-items-center">
+                        <figure>
+                            <img class="profile" src="/assets/images/sidebar-icon.jpg">
+                        </figure>
+                    </div>
+                    <div class="profile-text">Mr.Robot</div>
+                    <div class="icon icon-arrow_downward"></div>
+
+                </div>
             </div>
         </header>
 
@@ -58,33 +63,33 @@
                         </li>
                         <li class="nav-item">
                             <span class="icon icon-bell"></span>
-                            <span >alerts</span>
+                            <span>alerts</span>
                         </li>
                         <li class="nav-item">
                             <span class="icon icon-tag"></span>
-                            <span >Tags</span>
+                            <span>Tags</span>
                         </li>
                     </ul>
                 </nav>
 
                 <nav class="d=flex flex-column">
-                    <ul >
+                    <ul>
                         <h4 class="nav-head"> OTHERS </h4>
                         <li class="nav-item">
                             <span class="icon icon-settings"></span>
-                            <span >Settings</span>
+                            <span>Setting</span>
                         </li>
                         <li class="nav-item">
                             <span class="icon icon-sun"></span>
-                            <span >Tips</span>
+                            <span>Tips</span>
                         </li>
                         <li class="nav-item">
                             <span class="icon icon-trash"></span>
-                            <span >Trash</span>
+                            <span>Trash</span>
                         </li>
                         <li class="nav-item">
                             <span class="icon icon-sign-out"></span>
-                            <span >Logout</span>
+                            <span>Logout</span>
                         </li>
                     </ul>
                 </nav>
@@ -95,7 +100,7 @@
 
             <!-- Start: Main Section-->
 
-            <div class="d-flex flex-grow-1 flex-column container">
+            <div class="d-flex flex-grow-1 flex-column container overflow-hidden">
                 <div class="d-flex justify-content-end header-button text-center">
                     <button type="submit" class="btn btn-success"><i class="icon icon-filter"></i>Filter</button>
                 </div>
@@ -134,7 +139,7 @@
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex flex-column">
                                     <div class="header-text">Costs</div>
-                                    <div class="count">350</div>
+                                    <div class="count">$345</div>
                                 </div>
                                 <div class="d-flex inner-card logo card-logo icon-card-tertiary">
                                     <div class="icon-money"></div>
@@ -190,8 +195,8 @@
 
                 <h3 class="content-title"> Recent Activity</h3>
 
-                <div>
-                    <table class="w-100">
+                <div class="overflow-auto">
+                    <table class="w-100" >
 
                         <thead>
                             <tr class="text-left table-head">
@@ -215,12 +220,12 @@
                                     </figure>
                                 </td>
                                 <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
+                                <td class="type-discarded table-cell"> Discarded </td>
                                 <td class="table-cell">$40.27</td>
                                 <td class="table-cell"> 18 Aug </td>
                                 <td class="table-cell"> Grocery </td>
                                 <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
+                                <td class="table-cell"> N/A </td>
                             </tr>
 
                             <tr>
@@ -231,12 +236,16 @@
                                     </figure>
                                 </td>
                                 <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
+                                <td class="table-cell type-want">Wait </td>
                                 <td class="table-cell">$40.27</td>
                                 <td class="table-cell"> 18 Aug </td>
                                 <td class="table-cell"> Grocery </td>
                                 <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
+                                <td class="table-cell">
+                                    <figure>
+                                        <img class="table-image-1" src="/assets/images/amazon.jpg">
+                                    </figure>
+                                </td>
                             </tr>
 
                             <tr>
@@ -247,12 +256,33 @@
                                     </figure>
                                 </td>
                                 <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
+                                <td class="table-cell type-waiting"> Waiting </td>
                                 <td class="table-cell">$40.27</td>
                                 <td class="table-cell"> 18 Aug </td>
                                 <td class="table-cell"> Grocery </td>
                                 <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
+                                <td class="table-cell"> N/A </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-cell">
+                                    <figure>
+                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
+                                        Butter 160z
+
+                                    </figure>
+                                </td>
+                                <td class="table-cell"> 07 Nov, 8:35pm </td>
+                                <td class="table-cell type-discarded"> Discarded </td>
+                                <td class="table-cell">$40.27</td>
+                                <td class="table-cell"> 18 Aug </td>
+                                <td class="table-cell"> Grocery </td>
+                                <td class="table-cell">No</td>
+                                <td class="table-cell">
+                                    <figure>
+                                        <img class="table-image-1" src="/assets/images/amazon.jpg">
+                                    </figure>
+                                </td>
                             </tr>
 
                             <tr>
@@ -263,12 +293,12 @@
                                     </figure>
                                 </td>
                                 <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
+                                <td class="table-cell type-cancelled"> Cancelled </td>
                                 <td class="table-cell">$40.27</td>
                                 <td class="table-cell"> 18 Aug </td>
                                 <td class="table-cell"> Grocery </td>
                                 <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
+                                <td class="table-cell">N/A </td>
                             </tr>
 
                             <tr>
@@ -279,12 +309,16 @@
                                     </figure>
                                 </td>
                                 <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
+                                <td class="table-cell type-want"> Want </td>
                                 <td class="table-cell">$40.27</td>
                                 <td class="table-cell"> 18 Aug </td>
                                 <td class="table-cell"> Grocery </td>
                                 <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
+                                <td class="table-cell">
+                                    <figure>
+                                        <img class="table-image-1" src="/assets/images/amazon.jpg">
+                                    </figure>
+                                </td>
                             </tr>
 
                             <tr>
@@ -295,12 +329,12 @@
                                     </figure>
                                 </td>
                                 <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
+                                <td class="table-cell type-want"> Want </td>
                                 <td class="table-cell">$40.27</td>
                                 <td class="table-cell"> 18 Aug </td>
                                 <td class="table-cell"> Grocery </td>
                                 <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
+                                <td class="table-cell"> N/A</td>
                             </tr>
 
                             <tr>
@@ -311,28 +345,16 @@
                                     </figure>
                                 </td>
                                 <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
+                                <td class="table-cell type-want"> Want </td>
                                 <td class="table-cell">$40.27</td>
                                 <td class="table-cell"> 18 Aug </td>
                                 <td class="table-cell"> Grocery </td>
                                 <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
-                            </tr>
-
-                            <tr>
                                 <td class="table-cell">
                                     <figure>
-                                        <img class="table-image" src="/assets/images/peanut-butter.jpg">Skippy Peanut
-                                        Butter 160z
+                                        <img class="table-image-1" src="/assets/images/amazon.jpg">
                                     </figure>
                                 </td>
-                                <td class="table-cell"> 07 Nov, 8:35pm </td>
-                                <td class="table-cell"> Discarded </td>
-                                <td class="table-cell">$40.27</td>
-                                <td class="table-cell"> 18 Aug </td>
-                                <td class="table-cell"> Grocery </td>
-                                <td class="table-cell">No</td>
-                                <td class="table-cell"> Amazon </td>
                             </tr>
                         </tbody>
 
