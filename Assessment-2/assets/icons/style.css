@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'app';
+  src:  url('fonts/app.eot?ucn3fo');
+  src:  url('fonts/app.eot?ucn3fo#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?ucn3fo') format('truetype'),
+    url('fonts/app.woff?ucn3fo') format('woff'),
+    url('fonts/app.svg?ucn3fo#app') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bitcoin:before {
+  content: "\e902";
+  color: #f7931a;
+}
+.icon-cart:before {
+  content: "\e901";
+}
+.icon-settings:before {
+  content: "\e903";
+}
+.icon-sign-out:before {
+  content: "\e908";
+}
+.icon-bell:before {
+  content: "\e909";
+}
+.icon-trash:before {
+  content: "\e900";
+}
+.icon-arrow_downward:before {
+  content: "\e90b";
+}
+.icon-tag:before {
+  content: "\e935";
+}
+.icon-barcode:before {
+  content: "\e937";
+}
+.icon-dollar:before {
+  content: "\e93b";
+}
+.icon-list:before {
+  content: "\e9bb";
+}
+.icon-sun:before {
+  content: "\e9d4";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-arrow-left:before {
+  content: "\ea44";
+}

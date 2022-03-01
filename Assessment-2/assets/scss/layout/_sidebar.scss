@@ -1,0 +1,5 @@
+.navbar {
+    width: $navbar-width;
+    padding: $navbar-padding;
+    @include border (2px, solid, $grey);
+}

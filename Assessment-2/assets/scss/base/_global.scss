@@ -10,7 +10,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-family: "josefin sans", sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
 img {
@@ -91,6 +91,10 @@ a {
 
         &evenly {
             justify-content: space-evenly;
+        }
+
+        &end {
+            justify-content: flex-end;
         }
     }
 }
