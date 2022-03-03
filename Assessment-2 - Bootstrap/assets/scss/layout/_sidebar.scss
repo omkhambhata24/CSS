@@ -1,0 +1,85 @@
+ul {
+    padding-left: 0;
+}
+
+.nav {
+    width: $nav-width;
+
+    @include border (2px, solid, $grey);
+}
+
+.icon{
+    font-size: 1.5rem;
+    padding: 1rem;
+
+    @include for-tablet{
+        font-size: 1.125rem;
+        padding: 0.75rem;
+    }
+}
+
+.nav-head {
+    letter-spacing: 2px;
+    padding:1rem 1.5rem;
+    font-size: 1.125rem;
+
+    @include for-tablet {
+        font-size: 1rem;
+    }
+}
+
+.nav-item {
+    padding: $nav-item-padding;
+    color: $text;
+
+    &:hover {
+        border-left: 3px solid $success;
+        color: $success;
+        background-color: lighten($success, 62%);
+    }
+}
+
+.nav-toggle {
+    color: $purple;
+    border-radius: -10px;
+    top: 3%;
+    left:90%;
+    transform: translateY(-50%);
+    transition: all ease-in 0.4s;
+    .icon {
+        transition: all ease-in 0.4s;
+    }
+}
+
+#nav-checkbox{
+    z-index: 999;
+
+    ~ .nav {
+        transition: all .6s;
+    }
+}
+#nav-checkbox:checked ~ .nav {
+    transform: translateX(-85px);
+    width: 0;
+    padding: 0;
+  
+
+
+    .nav-head,.nav-item{
+        opacity: 0;
+        transform: translateX(-85px);
+    }
+
+    .nav-toggle {
+        transform-origin: center;
+        right: -125px;
+        left: auto;
+        transition: all ease-in 0.4s;
+        .icon {
+            display:block;
+            transform: rotate(180deg);
+        }
+        
+    }
+}
+

@@ -1,0 +1,63 @@
+// Header area style
+
+.brand-logo {
+    width: $nav-width;
+    height: 70px;
+}
+
+.profile {
+    width: $profile-width;
+    height: $profile-height;
+    border-radius: 50%;
+}
+
+.profile-text {
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+.head-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+
+@include for-phone{
+#headercheckbox:checked ~ .dropdown .temp {
+    display: none;
+}
+}
+
+@include for-phone {
+    .dropdown {
+        position: relative;
+        .menu {
+            display: block;
+            padding-right: 1.5rem;
+        }
+        .temp {
+            font-size: 1.5rem;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: absolute;
+            background-color: $light;
+            border: 2px solid grey;
+            z-index: 9;
+            top: 80px;
+            right: 25px;
+
+            .icon {
+                font-size: 1.5rem;
+            }
+
+            .profile {
+                max-width: 35px;
+                max-height: 35px;
+            }
+
+            .profile-text {
+                font-size: 1rem;
+            }
+        }
+    }
+}

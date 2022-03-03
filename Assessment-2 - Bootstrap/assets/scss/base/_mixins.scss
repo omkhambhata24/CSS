@@ -1,0 +1,26 @@
+// All the SCSS mixins goes here
+
+@mixin border($size,$type, $color)
+{
+    border: $size $type $color;
+}
+
+
+@mixin for-mini {
+    @media (max-width: 320px) { @content;}
+  }
+
+  @mixin for-phone {
+    @media (max-width: 576px) { @content; }
+  }
+
+  @mixin for-tablet {
+    @media (max-width: 780px) { @content; }
+  }
+  
+  @mixin for-laptop {
+    @media (max-width: 992px) { @content; }
+  }
+  @mixin for-desktop {
+    @media (max-width: 1200px) { @content; }
+  }
