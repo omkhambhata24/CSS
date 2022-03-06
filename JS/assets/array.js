@@ -1,8 +1,8 @@
 let arr = [
     {
-        name: "Hrishi",
+        name: "Ravi",
         gender: "Male",
-        company: "1Rivet"
+        company: "VinSol"
     },
     {
         name: "Jigar",
@@ -15,9 +15,9 @@ let arr = [
         company: "1Rivet"
     },
     {
-        name: "Abhi Abhi shake",
+        name: "Vandan",
         gender: "Male",
-        company: "1Rivet"
+        company: "CodeX"
     },
     {
         name: "Nirali",
@@ -40,7 +40,7 @@ let arr = [
         company: "1Rivet"
     },
     {
-        name: "Sneha",
+        name: "Snehal",
         gender: "Female",
         company: "1Rivet"
     },
@@ -75,10 +75,10 @@ let arr2 = [
 ]
 
 // gives last element
-console.log("Accessign elements using negative index:- ", arr.at(-1));
+console.log("Accessing elements using negative index:- ", arr2.at(-1));
 
 // Concatenates arr2 with arr and returns a new Array.
-console.log("Concatenating 2 arrays:- ", arr.concat(arr2));
+console.log("Concatenating 2 arrays:- ", arr2.concat(arr));
 
 // Copies elements within an array (in-place, no extra memory used) MODIFIES ORIGINAL Array
 arr.copyWithin(2, 3, 5);
