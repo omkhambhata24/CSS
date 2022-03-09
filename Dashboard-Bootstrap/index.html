@@ -29,27 +29,27 @@
             <nav class="d-flex flex-column flex-grow-1">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <span class="px-3 icon-search"></span>
+                        <span class="px-3 icon-home"></span>
                         <span>Home</span>
                     </li>
                     <li class="list-group-item">
-                        <span class="px-3 icon-bell"></span>
+                        <span class="px-3 icon-trophy"></span>
                         <span>Projects</span>
                     </li>
                     <li class="list-group-item">
-                        <span class="px-3 icon-tag"></span>
+                        <span class="px-3 icon-bank"></span>
                         <span>Billings</span>
                     </li>
                     <li class="list-group-item">
-                        <span class="px-3 icon-search"></span>
+                        <span class="px-3 icon-user"></span>
                         <span>Team Members</span>
                     </li>
                     <li class="list-group-item">
-                        <span class="px-3 icon-bell"></span>
+                        <span class="px-3 icon-bar-chart"></span>
                         <span>Stats</span>
                     </li>
                     <li class="list-group-item">
-                        <span class="px-3 icon-tag"></span>
+                        <span class="px-3 icon-settings"></span>
                         <span>Settings</span>
                     </li>
                 </ul>
@@ -57,7 +57,7 @@
 
             <nav class="d-flex flex-column align-items-center">
 
-                <div class="profile-wrapper border rounded"> 
+                <div class="profile-wrapper border rounded">
                     <figure class="profile rounded">
                         <img src="assets/images/sidebar-icon.jpg" alt="">
                     </figure>
@@ -70,18 +70,18 @@
 
 
         <div class="main-content flex-grow-1 row gx-0 p-5">
-            <div class="col-8">
+            <div class="col-9">
                 <div class="flex-nowrap col-8">
                     <input type="text" class="form-control" placeholder="Search for stats..." aria-label="Username"
                         aria-describedby="addon-wrapping">
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center py-3">
                     <div class="details">
                         <h2>Hello david</h2>
                         <h6>Welcome Back !</h6>
                     </div>
                     <div class="d-flex justify-content-end header-button text-center">
-                        <button type="submit" class="btn btn-secondary">Filter<i class="ps-3 icon-filter"></i></button>
+                        <button type="submit" class="btn btn-secondary">Filter<i class="ps-3 icon-filters"></i></button>
                     </div>
                 </div>
 
@@ -91,7 +91,7 @@
                         <div class="card p-3">
                             <div class="card-body">
                                 <div class="inner-card d-flex justify-content-center align-items-center my-2">
-                                    <span class="icon-sun"></span>
+                                    <span class="icon-eye"></span>
                                 </div>
                                 <h5 class="card-title">Views</h5>
                                 <h3 class="counter">500</h3>
@@ -103,7 +103,7 @@
                         <div class="card p-3">
                             <div class="card-body">
                                 <div class="inner-card d-flex justify-content-center align-items-center my-2">
-                                    <span class="icon-sun"></span>
+                                    <span class="icon-compass"></span>
                                 </div>
                                 <h5 class="card-title">Visits</h5>
                                 <h3 class="counter">2000</h3>
@@ -115,7 +115,7 @@
                         <div class="card p-3">
                             <div class="card-body">
                                 <div class="inner-card d-flex justify-content-center align-items-center my-2">
-                                    <span class="icon-sun"></span>
+                                    <span class="icon-shop-window"></span>
                                 </div>
                                 <h5 class="card-title">Orders</h5>
                                 <h3 class="counter">5100</h3>
@@ -130,56 +130,80 @@
                 <div class="row">
                     <div class="col-6 my-3">
                         <div class="card">
-                            <div class="card-body d-flex justify-content-between card-skin">
+                            <div class="card-body p-4 d-flex justify-content-between card-skin">
                                 <div class="details">
                                     <h5 class="card-title">Sales</h5>
                                     <h6 class="card-details">Total Sales today</h6>
                                     <h3 class="counter">500</h3>
                                 </div>
-                                <div class="icons">
-                                    <span class="icon">icon</span>
+                                <div class="pie-chart d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="inner-circle d-flex justify-content-center align-items-center card-skin">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-arrow-down"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 my-3">
                         <div class="card">
-                            <div class="card-body d-flex justify-content-between card-green">
+                            <div class="card-body p-4 d-flex justify-content-between card-green">
                                 <div class="details">
                                     <h5 class="card-title">Sales</h5>
                                     <h6 class="card-details">Total Sales today</h6>
                                     <h3 class="counter">500</h3>
                                 </div>
-                                <div class="icons">
-                                    <span class="icon">icon</span>
+                                <div class="pie-chart d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="inner-circle d-flex justify-content-center align-items-center card-green">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-arrow-down"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 my-3">
                         <div class="card">
-                            <div class="card-body d-flex justify-content-between card-primary">
+                            <div class="card-body p-4 d-flex justify-content-between card-primary">
                                 <div class="details">
                                     <h5 class="card-title">Sales</h5>
                                     <h6 class="card-details">Total Sales today</h6>
                                     <h3 class="counter">500</h3>
                                 </div>
-                                <div class="icons">
-                                    <span class="icon">icon</span>
+                                <div class="pie-chart d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="inner-circle d-flex justify-content-center align-items-center card-primary">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-arrow-up"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 my-3">
                         <div class="card">
-                            <div class="card-body d-flex justify-content-between card-purple">
+                            <div class="card-body p-4 d-flex justify-content-between card-purple">
                                 <div class="details">
                                     <h5 class="card-title">Sales</h5>
                                     <h6 class="card-details">Total Sales today</h6>
                                     <h3 class="counter">500</h3>
                                 </div>
-                                <div class="icons">
-                                    <span class="icon">icon</span>
+                                <div class="pie-chart d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="inner-circle d-flex justify-content-center align-items-center card-purple">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="icon-arrow"></span>
                                 </div>
                             </div>
                         </div>
@@ -189,46 +213,55 @@
                 <!-- End: Card-Analytics -->
 
             </div>
-            <div class="col-4 ps-5">
-                <div class="sales-revenue">
+            <div class="col-3 ps-5">
+                <div class="sales-wrapper p-3">
+                    <h3 class="p-3 d-flex justify-content-center">Sales Revenue</h3>
                     <!-- revenue-card:start -->
                     <div class="row revenue-card">
-                        <div class="col-12">
-                            <div class="card p-3 d-flex">
-                                <span>icon</span>
-                                <div class="details">
-                                    <h4>230k</h4>
-                                    <p class="titles">sales</p>
-                                </div>
+                        <div class="col-12 px-4 d-flex justify-content-around">
+                            <div class="sales-icon d-flex justify-content-center align-items-center my-2">
+                                <span class="icon-shop-window"></span>
+                            </div>
+                            <div class="details">
+                                <h4>230k</h4>
+                                <p class="titles">sales</p>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="card p-3 d-flex">
-                                <span>icon</span>
-                                <div class="details">
-                                    <h4>230k</h4>
-                                    <p class="titles">sales</p>
-                                </div>
+
+                        <div class="col-12 px-4 d-flex justify-content-around">
+                            <div class="sales-icon d-flex justify-content-center align-items-center my-2">
+                                <span class="icon-customer"></span>
+                            </div>
+                            <div class="details">
+                                <h4>230k</h4>
+                                <p class="titles">sales</p>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="card p-3 d-flex">
-                                <span>icon</span>
-                                <div class="details">
-                                    <h4>230k</h4>
-                                    <p class="titles">sales</p>
-                                </div>
+
+                        <div class="col-12 px-4 d-flex justify-content-around">
+                            <div class="sales-icon d-flex justify-content-center align-items-center my-2">
+                                <span class="icon-dashboard"></span>
+                            </div>
+                            <div class="details">
+                                <h4>230k</h4>
+                                <p class="titles">sales</p>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="card p-3 d-flex">
-                                <span>icon</span>
-                                <div class="details">
-                                    <h4>230k</h4>
-                                    <p class="titles">sales</p>
-                                </div>
+
+                        <div class="col-12 px-4 d-flex justify-content-around">
+                            <div class="sales-icon d-flex justify-content-center align-items-center my-2">
+                                <span class="icon-chart"></span>
+                            </div>
+                            <div class="details">
+                                <h4>230k</h4>
+                                <p class="titles">sales</p>
                             </div>
                         </div>
+
+                        <div>
+                            Statistics
+                        </div>
+                        
                     </div>
 
                 </div>

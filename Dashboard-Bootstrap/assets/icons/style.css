@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?sf7hms');
-  src:  url('fonts/app.eot?sf7hms#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?sf7hms') format('truetype'),
-    url('fonts/app.woff?sf7hms') format('woff'),
-    url('fonts/app.svg?sf7hms#app') format('svg');
+  src:  url('fonts/app.eot?9sgnij');
+  src:  url('fonts/app.eot?9sgnij#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?9sgnij') format('truetype'),
+    url('fonts/app.woff?9sgnij') format('woff'),
+    url('fonts/app.svg?9sgnij#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,51 +24,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-filter:before {
-  content: "\e905";
+.icon-chart:before {
+  content: "\e90d";
 }
-.icon-arrow_downward:before {
-  content: "\e90b";
-}
-.icon-money:before {
-  content: "\e902";
-}
-.icon-trash:before {
-  content: "\e900";
-}
-.icon-cart:before {
-  content: "\e901";
-}
-.icon-settings:before {
-  content: "\e903";
-}
-.icon-sign-out:before {
-  content: "\e908";
-}
-.icon-bell:before {
+.icon-customer:before {
   content: "\e909";
 }
-.icon-tag:before {
-  content: "\e935";
+.icon-filters:before {
+  content: "\e908";
 }
-.icon-barcode:before {
-  content: "\e937";
+.icon-shop-window:before {
+  content: "\e906";
 }
-.icon-dollar:before {
-  content: "\e93b";
+.icon-compass:before {
+  content: "\e907";
+}
+.icon-bank:before {
+  content: "\e905";
+}
+.icon-arrow:before {
+  content: "\e90a";
+}
+.icon-user:before {
+  content: "\e900";
+}
+.icon-settings:before {
+  content: "\e901";
+}
+.icon-eye:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e903";
 }
 .icon-search:before {
-  content: "\e986";
+  content: "\e90c";
 }
-.icon-list:before {
-  content: "\e9bb";
+.icon-dashboard:before {
+  content: "\e90b";
 }
-.icon-sun:before {
-  content: "\e9d4";
+.icon-bar-chart:before {
+  content: "\e904";
 }
-.icon-heart:before {
-  content: "\e9da";
+.icon-trophy:before {
+  content: "\e99e";
 }
-.icon-arrow-left:before {
-  content: "\ea44";
+.icon-arrow-up:before {
+  content: "\ea3b";
+}
+.icon-arrow-down:before {
+  content: "\ea3d";
 }

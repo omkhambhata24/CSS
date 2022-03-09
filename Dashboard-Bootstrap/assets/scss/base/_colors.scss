@@ -12,7 +12,7 @@ $gray: #dddcd8;
 $dark-gray: #bebaad;
 
 // Additional Shades of gray color
-$light: #f4f5f9;
+$light: #ffffff;
 $extra-light: #fcfcfc;
 $green: #def3e0;
 $skin: #e4d7c8;
@@ -42,5 +42,11 @@ $theme-colors: (
 @each $key, $val in $theme-colors {
   .card-#{$key} {
     background-color: $val;
+  }
+}  
+
+@each $key, $val in $theme-colors {
+  .icon-#{$key} {
+    color: $val;
   }
 }  
