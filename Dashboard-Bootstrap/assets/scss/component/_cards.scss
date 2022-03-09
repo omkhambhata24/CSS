@@ -1,1 +1,16 @@
 // Card styles goes here
+
+.card{
+    border: none;
+    background-color: transparent;
+}
+
+.card-body{
+    border-radius: $card-border-radius;
+}
+
+.card-wrapper {
+    border-radius: $card-border-radius;
+    background-color: #e4e0d5;
+}
+

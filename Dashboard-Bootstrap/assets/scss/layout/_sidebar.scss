@@ -6,5 +6,29 @@ ul{
 .profile{
     width:$profile-width;
     height:$profile-height;
+    overflow: hidden;
+}
+
+.profile-wrapper{
     padding: $profile-image-padding;
+}
+
+.list-group-item {
+    border: none;
+    background-color: transparent;
+    font-size: $list-font-size;
+
+    &:hover{
+        border-left: 4px solid $accent;
+    }
+}
+
+//Navbar
+.navbar{
+    width: $navbar-width;
+    border-right: 1px solid $gray;
+}
+
+figure{
+    margin: 0;
 }

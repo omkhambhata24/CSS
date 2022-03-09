@@ -1,18 +1,22 @@
 // Theme Primary Color
-$primary: #04471c;
+$primary: #cef0f5;
 
 // Mainly use for UI controls like Buttons
 $secondary: #fbde4a;
 
 // Used for Footer Section
-$accent: #021a28;
+$accent: #000000;
 
 // Mainly use for Normal Text color
-$gray: #b6b9bd;
+$gray: #c6cacf;
 
 // Additional Shades of gray color
-$light: #f8fafc;
+$light: #f4f5f9;
 $extra-light: #fcfcfc;
+$green: #def3e0;
+$skin: #e4d7c8;
+$purple: #e5e8f7;
+
 
 $body-bg: $light;
 
@@ -24,5 +28,17 @@ $theme-colors: (
   "secondary": $secondary,
   "gray": $gray,
   "light": $light,
-  "accent": $accent
+  "accent": $accent,
+  "extra-light": $extra-light,
+  "green": $green,
+  "skin": $skin,
+  "purple,": $purple,
+
 );
+
+
+@each $key, $val in $theme-colors {
+  .card-#{$key} {
+    background-color: $val;
+  }
+}  
