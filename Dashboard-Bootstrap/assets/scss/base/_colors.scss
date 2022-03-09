@@ -8,7 +8,8 @@ $secondary: #fbde4a;
 $accent: #000000;
 
 // Mainly use for Normal Text color
-$gray: #c6cacf;
+$gray: #dddcd8;
+$dark-gray: #bebaad;
 
 // Additional Shades of gray color
 $light: #f4f5f9;
@@ -33,6 +34,7 @@ $theme-colors: (
   "green": $green,
   "skin": $skin,
   "purple,": $purple,
+  "dark-gray": $dark-gray,
 
 );
 
