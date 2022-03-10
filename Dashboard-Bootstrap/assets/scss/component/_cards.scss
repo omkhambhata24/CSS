@@ -59,7 +59,14 @@ $pie-complete: (
         background: conic-gradient(black $val, transparent $val 100%);
         overflow:hidden;
     }
-  }  
+}  
 
+.counter{
+    font-weight:600;
+}
+
+.card-text{
+    font-size: $card-text-font-size;
+}
 
 
