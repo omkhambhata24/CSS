@@ -14,7 +14,8 @@ ul{
 }
 
 .list-group-item {
-    border: none;
+    border:none;
+    border-left: 4px solid transparent;
     background-color: transparent;
     font-size: $list-font-size;
 
