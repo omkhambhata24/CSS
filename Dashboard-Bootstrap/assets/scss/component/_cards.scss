@@ -21,14 +21,6 @@
     background-color: $dark-gray;
 }
 
-.pie-chart{
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    background: conic-gradient(black 50%, transparent 50% 100%);
-    overflow:hidden;
-}
-
 .inner-circle{
     height:85%;
     width:85%;
@@ -48,5 +40,26 @@
     background-color: $light;
     color: $accent;
 }
+
+$pie-complete: (
+  "25":25%,
+  "40":40%,
+  "50":50%,
+  "65":65%,
+  "75":75%,
+  "87":87%,
+
+);
+
+@each $key, $val in $pie-complete {
+    .pie-#{$key} {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background: conic-gradient(black $val, transparent $val 100%);
+        overflow:hidden;
+    }
+  }  
+
 
 
