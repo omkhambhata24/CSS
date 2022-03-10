@@ -31,6 +31,7 @@
     border-radius: $card-border-radius;
     background-color: $accent;
     color: $light;
+    // height: 775px;
 }
 
 .sales-icon{
@@ -63,6 +64,12 @@ $pie-complete: (
 
 .counter{
     font-weight:600;
+    font-size: $counter-font-size;
+}
+
+.progress-text{
+    font-weight:600;
+    font-size: $progress-font-size;
 }
 
 .card-text{
