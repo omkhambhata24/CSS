@@ -19,8 +19,9 @@ ul{
     font-size: $list-font-size;
 
     &:hover{
+        font-weight: bolder;
         border-left: 4px solid $accent;
-        color: $dark-gray;
+        color: $danger;
     }
 }
 
