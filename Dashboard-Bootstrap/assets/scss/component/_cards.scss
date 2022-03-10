@@ -37,13 +37,16 @@
 
 .sales-wrapper {
     border-radius: $card-border-radius;
-    background-color: $gray;
+    background-color: $accent;
+    color: $light;
 }
 
 .sales-icon{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: $light;
+    color: $accent;
 }
+
 

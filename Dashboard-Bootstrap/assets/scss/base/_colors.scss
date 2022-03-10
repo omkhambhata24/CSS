@@ -1,5 +1,6 @@
 // Theme Primary Color
 $primary: #cef0f5;
+$danger: #ec1818;
 
 // Mainly use for UI controls like Buttons
 $secondary: #fbde4a;
@@ -35,6 +36,7 @@ $theme-colors: (
   "skin": $skin,
   "purple,": $purple,
   "dark-gray": $dark-gray,
+  "danger":$danger,
 
 );
 
