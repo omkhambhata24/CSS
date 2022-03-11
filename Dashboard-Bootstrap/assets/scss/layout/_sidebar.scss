@@ -28,8 +28,8 @@ ul{
 
 //Navbar
 .aside{
-    width: $navbar-width;
-    min-width: $navbar-width;
+    flex: 0 0 250px;
+    // width: $navbar-width;
     border-right: 1px solid $gray;
 }
 
@@ -39,4 +39,40 @@ figure{
 
 .nav-text{
     font-size: $nav-text-font;
+}
+
+.aside-toggle {
+    background-color: $light;
+    border-radius: -10px;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    transition: all ease-in 0.4s;
+    .icon {
+        display: block;
+        transition: all ease-in 0.4s;
+        transform: rotate(180deg);
+    }
+}
+
+#aside-checkbox:checked ~ .aside {
+    transform: translateX(-250px);
+    flex-basis: 0;
+    width: 0;
+    // padding: 0;
+    .aside-toggle {
+        transform-origin: center;
+        transition: all ease-in 0.4s;
+        left:auto;
+        right:-275px;
+        
+        .icon {
+            display:block;
+        }
+    }
+}
+
+.icon{
+    font-size: 1.25rem;
+    color: $danger;  
 }
