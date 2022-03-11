@@ -29,6 +29,7 @@ ul{
 //Navbar
 .aside{
     width: $navbar-width;
+    min-width: $navbar-width;
     border-right: 1px solid $gray;
 }
 
